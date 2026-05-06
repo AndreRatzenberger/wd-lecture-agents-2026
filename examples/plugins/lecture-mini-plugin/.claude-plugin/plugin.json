@@ -1,0 +1,5 @@
+{
+  "name": "lecture-mini-plugin",
+  "description": "Tiny teaching plugin that demonstrates packaging a reusable repo cartography skill.",
+  "version": "0.1.0"
+}

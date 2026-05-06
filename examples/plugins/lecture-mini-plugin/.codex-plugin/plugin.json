@@ -1,0 +1,12 @@
+{
+  "name": "lecture-mini-plugin",
+  "version": "0.1.0",
+  "description": "Tiny teaching plugin that demonstrates packaging a reusable repo cartography skill.",
+  "skills": [
+    "skills/"
+  ],
+  "interface": {
+    "displayName": "Lecture Mini Plugin",
+    "brandColor": "#2563EB"
+  }
+}
