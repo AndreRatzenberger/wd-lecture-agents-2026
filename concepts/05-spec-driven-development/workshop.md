@@ -1,4 +1,4 @@
-# Workshop: Mini-Spec fuer den Playground
+# Workshop: Mini-Spec fuer den Flock-Bug
 
 ## Ziel
 
@@ -13,7 +13,7 @@ Du schreibst eine kleine Spec, laesst den Agenten daraus einen Plan machen und i
 Fuehre aus:
 
 ```bash
-python -m unittest discover -s playground/tiny-issue-tracker/tests
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
 ```
 
 Notiere:
@@ -25,7 +25,7 @@ Notiere:
 ## Schritt 2: Spec-Prompt
 
 ```text
-Write a mini-spec for fixing the failing behavior in playground/tiny-issue-tracker.
+Write a mini-spec for fixing the failing Flock timer precision regression.
 Do not edit files.
 
 Include:
@@ -67,9 +67,9 @@ Do not edit yet.
 
 ```text
 Implement the plan.
-Keep the public API stable.
+Keep the public timer API stable.
 Run:
-python -m unittest discover -s playground/tiny-issue-tracker/tests
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
 ```
 
 ## Schritt 6: Review gegen Spec

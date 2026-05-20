@@ -46,16 +46,19 @@ Erstelle in einer Scratch-Datei oder direkt im Prompt:
 
 ## Project Shape
 
-- The workshop playground lives in `playground/tiny-issue-tracker`.
-- The app has no external dependencies.
+- This task runs in the Flock repo.
+- Flock is a Python 3.12+ project managed with uv.
+- The current exercise branch is `lecture/timer-precision-bug-start`.
+- The failing behavior lives in timer scheduling.
 
 ## Work Rules
 
-- Read the relevant README and tests before editing.
-- Keep changes scoped to the requested behavior.
-- Do not add dependencies for the playground.
+- Read `AGENTS.md`, `README.md`, the relevant implementation file, and the failing test before editing.
+- Keep changes scoped to timer scheduling.
+- Do not read PR #412 before diagnosing.
+- Do not add dependencies.
 - Before saying done, run:
-  `python -m unittest discover -s playground/tiny-issue-tracker/tests`
+  `uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q`
 
 ## Done Means
 
@@ -72,7 +75,7 @@ Use the following agent instructions for this task:
 
 <paste mini instructions>
 
-Task: Fix the failing tests in the playground.
+Task: Fix the failing Flock timer precision regression.
 ```
 
 ## Schritt 5: Scope-Check

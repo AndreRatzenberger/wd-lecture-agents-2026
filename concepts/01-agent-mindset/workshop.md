@@ -2,7 +2,7 @@
 
 ## Ziel
 
-Du wandelst einen schlechten Agent-Auftrag in einen robusten Arbeitsauftrag um und testest ihn am Playground.
+Du wandelst einen schlechten Agent-Auftrag in einen robusten Arbeitsauftrag um. Erst am kleinen Playground, dann am echten Flock-Bug.
 
 ## Dauer
 
@@ -17,6 +17,17 @@ python -m unittest discover -s playground/tiny-issue-tracker/tests
 ```
 
 Die Tests duerfen fehlschlagen. Das ist Arbeitsmaterial.
+
+Fuer den Realprojekt-Track:
+
+```bash
+git clone https://github.com/whiteducksoftware/flock.git
+cd flock
+git checkout lecture/timer-precision-bug-start
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
+```
+
+Der Flock-Test muss fehlschlagen. Das ist der eigentliche Arbeitsfall.
 
 ## Schritt 1: Schlechten Prompt bewusst ausprobieren
 
@@ -41,20 +52,21 @@ Kopiere und fuelle aus:
 
 ```text
 Goal:
-Fix the failing tests in playground/tiny-issue-tracker.
+Fix the failing timer precision regression on the current Flock branch.
 
 Context:
-Read playground/tiny-issue-tracker/README.md,
-playground/tiny-issue-tracker/issue_tracker.py,
-and playground/tiny-issue-tracker/tests/test_issue_tracker.py first.
+Read AGENTS.md, README.md,
+src/flock/components/orchestrator/scheduling/timer.py,
+and tests/test_timer_component.py first.
 
 Constraints:
-No external dependencies.
-Keep the public IssueTracker API stable.
-Make the smallest change that explains the failing tests.
+Do not read PR #412 before diagnosing.
+Do not change the regression test unless it is demonstrably wrong.
+Keep the fix scoped to timer scheduling.
+Do not add dependencies.
 
 Done when:
-python -m unittest discover -s playground/tiny-issue-tracker/tests passes.
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q passes.
 
 Work style:
 Read first. Explain likely causes. Then edit. Report exact verification.
@@ -81,6 +93,6 @@ Vergleiche die beiden Laeufe:
 
 ## Ergebnis
 
-Du hast einen wiederverwendbaren Task-Prompt fuer Coding Agents.
+Du hast einen wiederverwendbaren Task-Prompt fuer Coding Agents und hast gesehen, warum echte Repos bessere Agentenfuehrung erzwingen als Spielzeug-Code.
 
 Speichere deine beste Version lokal in deinen Notizen oder in `resources/prompt-cards.md`, wenn du den Kurs weiterentwickelst.

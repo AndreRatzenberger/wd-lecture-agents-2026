@@ -84,3 +84,28 @@ Create:
 - references or scripts only if they improve reliability
 Keep it focused on one job.
 ```
+
+## 7. Flock Bug Branch Prompt
+
+```text
+Goal:
+Fix the failing timer precision regression on the current Flock branch.
+
+Context:
+Read AGENTS.md, README.md,
+src/flock/components/orchestrator/scheduling/timer.py,
+and tests/test_timer_component.py first.
+
+Constraints:
+Do not read PR #412 before diagnosing.
+Do not change the regression test unless it is demonstrably wrong.
+Keep the fix scoped to timer scheduling.
+Do not add dependencies.
+
+Done when:
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q passes.
+
+Work style:
+Read first. Explain likely root cause. Propose a short plan. Then edit.
+Report exact verification and changed files.
+```

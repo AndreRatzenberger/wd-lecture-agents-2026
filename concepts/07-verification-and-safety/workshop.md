@@ -13,7 +13,7 @@ Du lernst, eine Agent-Aenderung nicht nur anzunehmen, sondern gegen Auftrag, Dif
 Nach einer Agent-Aenderung:
 
 ```bash
-git diff -- playground/tiny-issue-tracker
+git diff
 ```
 
 Frage:
@@ -26,7 +26,7 @@ Frage:
 ## Schritt 2: Tests ausfuehren
 
 ```bash
-python -m unittest discover -s playground/tiny-issue-tracker/tests
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
 ```
 
 Wenn der Agent sagt "tests pass", aber du keinen Output gesehen hast, zaehlt es nicht.

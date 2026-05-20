@@ -55,8 +55,8 @@ Prompt:
 
 ```text
 Use the repo-cartographer skill.
-Map playground/tiny-issue-tracker before any edits.
-Task after mapping: identify why the tests fail and propose the smallest fix.
+Map the Flock timer scheduling path before any edits.
+Task after mapping: identify why the focused timer regression fails and propose the smallest fix.
 Do not edit yet.
 ```
 
@@ -67,11 +67,11 @@ Eine Skill steht und faellt mit der `description`.
 Teste zwei Prompts:
 
 ```text
-Where does the issue tracker decide which issue is next?
+Where does Flock calculate the next fire time for scheduled agents?
 ```
 
 ```text
-I want to fix a bug in the issue tracker, but first map the relevant code.
+I want to fix a timer precision bug in Flock, but first map the relevant code.
 ```
 
 Frage:

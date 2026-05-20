@@ -1,4 +1,4 @@
-# Workshop: Ralph Loop am Playground
+# Workshop: Ralph Loop am Flock-Bug
 
 ## Ziel
 
@@ -13,7 +13,9 @@ Du fuehrst einen Agenten in fuenf klaren Phasen durch eine kleine Reparatur.
 ```text
 Ralph loop, phase Read.
 Do not edit files.
-Inspect playground/tiny-issue-tracker README, implementation, and tests.
+Inspect AGENTS.md, README.md,
+src/flock/components/orchestrator/scheduling/timer.py,
+and tests/test_timer_component.py.
 Return the relevant facts and likely failure causes.
 ```
 
@@ -48,7 +50,8 @@ Confirmed. Continue to Produce.
 ```text
 Ralph loop, phase Produce.
 Implement the smallest change that satisfies the locked scope.
-Run the verification command.
+Run:
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
 ```
 
 ## Schritt 5: Halt

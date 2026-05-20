@@ -46,26 +46,25 @@ specify -> plan -> tasks -> implement
 Vage:
 
 ```text
-Make search better.
+Fix the timer test.
 ```
 
 Spec:
 
 ```text
 Problem:
-Issue search currently misses titles with different casing.
+Daily time schedules can wrap to tomorrow even when execution is still inside the target second.
 
 Desired behavior:
-Searching "login" finds an issue titled "Fix Login".
+If now is 12:00:00.500 and the schedule is time(12, 0, 0), the next fire time stays today.
 
 Non-goals:
-No fuzzy search, no persistence, no CLI.
+No cron rewrite, no new time abstraction, no dependency changes.
 
 Acceptance:
-- search trims surrounding whitespace
-- search is case-insensitive
-- existing create/list/close behavior remains unchanged
-- test suite passes
+- the focused timer regression passes
+- existing interval, datetime, and cron behavior remains unchanged
+- the regression test is not weakened
 ```
 
 ## Live-Demo
@@ -73,7 +72,7 @@ Acceptance:
 Bitte den Agenten:
 
 ```text
-Write a mini-spec for fixing the failing search test. Do not edit code yet.
+Write a mini-spec for fixing the failing Flock timer precision regression. Do not edit code yet.
 ```
 
 Dann:
