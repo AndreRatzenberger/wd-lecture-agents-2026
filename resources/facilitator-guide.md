@@ -28,6 +28,15 @@ python -m unittest discover -s playground/tiny-issue-tracker/tests
 
 Die Playground-Tests duerfen am Anfang rot sein. Das ist Absicht. Der Playground ist nur der Warm-up.
 
+Halte fuer den Greenfield-Track bereit:
+
+```text
+resources/greenfield-puzzle-game.md
+resources/greenfield-facilitator-notes.md
+```
+
+Der Greenfield-Track braucht kein vorbereitetes Repo. Studierende koennen in einem leeren Ordner arbeiten. Wichtig ist: erst PRD und Mechanics Spec, dann eine kleine Slice.
+
 Bereite zusaetzlich den Flock-Track vor:
 
 ```bash
@@ -84,20 +93,36 @@ Dann mit einem Agenten live anwenden:
 - Produce: kleinste Aenderung bauen
 - Halt: stoppen, Diff und Tests zeigen
 
+### Demo 4: Greenfield vs Brownfield
+
+Zeige die zwei Arbeitsarten nebeneinander:
+
+```text
+Greenfield Puzzle:
+Erst PRD -> Mechanics Spec -> Testplan -> Slice -> Code
+
+Brownfield Flock:
+Erst Repo lesen -> Failure verstehen -> Scope locken -> Fix -> Beweis
+```
+
+Die Aha-Antwort: Greenfield braucht mehr explizite Produktform, Brownfield braucht mehr Respekt vor bestehender Form.
+
 ## Zeitmanagement
 
 Wenn die Gruppe sehr frisch ist:
 
 - Modul 03 MCP kuerzen
 - Modul 06 Orchestration einfacher halten
+- Greenfield nur bis PRD und erste Slice fuehren
 - mehr Zeit fuer Modul 02 und 07 geben
 - Flock nur als gefuehrte Demo verwenden, nicht als freie Aufgabe
 
 Wenn die Gruppe sehr stark ist:
 
 - Modul 04 Skill bauen lassen
-- Modul 05 Mini-Spec in echte Tasks splitten lassen
+- Modul 05 Greenfield-Spec in echte Tasks splitten lassen
 - Modul 06 mit zwei parallelen Agent-Rollen simulieren lassen
+- Browser-Automation fuer die Puzzle-Slice wirklich laufen lassen
 - Nach dem Fix den echten PR #412 als Review-Vergleich nutzen
 
 ## Moderationssaetze
@@ -107,6 +132,7 @@ Wenn die Gruppe sehr stark ist:
 - "MCP gibt Haende. Skills geben Gewohnheiten. Specs geben Richtung. Reviews geben Bremsen."
 - "Wir wollen keine perfekten Prompts. Wir wollen robuste Arbeitsablaeufe."
 - "Toy-Projekte zeigen, dass Agents Code schreiben koennen. Flock zeigt, ob wir Agents fuehren koennen."
+- "Greenfield braucht Spec, weil noch keine Codebase widerspricht."
 
 ## Abschlussfrage
 
