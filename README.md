@@ -112,6 +112,6 @@ Die Inhalte wurden aus drei Richtungen gebaut:
 
 - aktuelle offizielle Docs von OpenAI Codex, Anthropic Claude Code, GitHub Copilot, MCP und Agent Skills
 - lokale Research-Artefakte aus `spec-compare-codex` und `cc-ecosystem`
-- Pyros Vorgabe, den "aha!"-Charakter von Projekten wie `JuliusBrussee/caveman` ernst zu nehmen: kleine Form, großer Effekt
+- Vorgabe, den "aha!"-Charakter von Projekten wie `JuliusBrussee/caveman` ernst zu nehmen: kleine Form, großer Effekt
 
 Siehe [resources/research-notes.md](resources/research-notes.md) für die belegten Quellen.
