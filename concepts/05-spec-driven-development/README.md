@@ -33,6 +33,11 @@ Das ist nicht mehr Papierkram. Es ist Drift-Kontrolle.
 - Edge Cases
 - Verifikationsbefehle
 
+Im Workshop gibt es zwei Varianten:
+
+- **Greenfield**: Die Spec erzeugt erst die Produktform. Beispiel: ein neues Puzzle-Spiel braucht PRD, Mechanics Spec, Testvertrag und erste Slice.
+- **Brownfield**: Die Spec begrenzt eine Aenderung in vorhandener Form. Beispiel: der Flock-Timer-Bug braucht Failure, Scope, Non-goals und Verifikationsbefehl.
+
 ## Spec Kit als Oekosystemsignal
 
 GitHub Spec Kit macht diesen Ablauf agententauglich und spricht explizit mehrere Coding Agents an. Wichtig ist nicht, dass jeder Spec Kit installieren muss. Wichtig ist das Prozessmuster:
@@ -43,13 +48,26 @@ specify -> plan -> tasks -> implement
 
 ## Mini-Beispiel
 
-Vage:
+Greenfield vage:
+
+```text
+Build a novel puzzle game.
+```
+
+Greenfield besser:
+
+```text
+First write three concepts, recommend one, then write a PRD, mechanics spec,
+test plan, and first implementation slice. Do not implement yet.
+```
+
+Brownfield vage:
 
 ```text
 Fix the timer test.
 ```
 
-Spec:
+Brownfield Spec:
 
 ```text
 Problem:
@@ -72,13 +90,19 @@ Acceptance:
 Bitte den Agenten:
 
 ```text
+Write a PRD and mechanics spec for a novel minimal puzzle game. Do not edit code yet.
+```
+
+Danach:
+
+```text
 Write a mini-spec for fixing the failing Flock timer precision regression. Do not edit code yet.
 ```
 
-Dann:
+Vergleiche:
 
 ```text
-Review the spec against the tests. What is missing?
+Which spec had to create product shape, and which spec had to respect existing shape?
 ```
 
 ## Takeaway

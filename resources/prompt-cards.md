@@ -109,3 +109,65 @@ Work style:
 Read first. Explain likely root cause. Propose a short plan. Then edit.
 Report exact verification and changed files.
 ```
+
+## 8. Greenfield Puzzle PRD Prompt
+
+```text
+We want to build a highly polished professional minimalistic puzzle game as a web app.
+The puzzle game idea should be novel and addictive: easy to understand and play, hard to master.
+
+Requirements:
+- procedural/generative levels, no handcrafted levels
+- infinite replayability
+- fair losing condition
+- mobile and desktop web
+- playable without sound
+- professional minimalistic look and feel
+- extensive unit tests
+- extensive browser automation tests
+- production-ready enough to deploy and publish
+
+Do not implement yet.
+Search the web for puzzle game design best practices and browser-game testing guidance.
+Return three concepts, recommend one, then write a PRD for the recommended concept.
+```
+
+## 9. Greenfield Slice Lock Prompt
+
+```text
+From the approved PRD, mechanics spec, and test plan, define the first implementation slice.
+
+Rules:
+- playable in browser
+- one core mechanic only
+- deterministic seed mode
+- unit-testable game logic separated from UI
+- one losing condition
+- one restart flow
+- no sound dependency
+- no online services
+
+Return:
+- files likely to create
+- acceptance criteria
+- tests to write first
+- explicit non-goals
+Do not implement yet.
+```
+
+## 10. Browser Verification Prompt
+
+```text
+Use browser automation or Playwright MCP to verify the app manually.
+
+Check:
+- page loads without console errors
+- core move works
+- losing condition can be reached
+- restart works
+- mobile viewport is usable
+- no sound is required
+
+Report exact evidence and screenshots or observations.
+Do not call it production-ready unless these checks pass.
+```

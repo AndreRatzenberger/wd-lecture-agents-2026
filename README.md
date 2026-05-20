@@ -6,9 +6,10 @@ Ziel: Studierende sollen nicht nur wissen, dass Agents Code schreiben koennen. S
 
 Der Kurs ist bewusst harness-neutral. Die Beispiele sind fuer Codex, Claude Code und GitHub Copilot gedacht, aber die Konzepte tragen auch zu Cursor, Cline, Windsurf, Gemini CLI, OpenCode und anderen Agent-Umgebungen.
 
-Die Hands-ons haben zwei Ebenen:
+Die Hands-ons haben drei Ebenen:
 
 - `playground/tiny-issue-tracker`: sehr kleiner Warm-up fuer den ersten Agent-Contract.
+- [Greenfield Puzzle Game](resources/greenfield-puzzle-game.md): neues Produkt erst spezifizieren, dann in eine kleine Slice schneiden.
 - [Flock Hands-on](resources/flock-hands-on.md): echtes Repo, echter Bug, echter Verifikationsdruck.
 
 ## Lernversprechen
@@ -55,6 +56,8 @@ examples/
   mcp/
 resources/
   facilitator-guide.md
+  greenfield-puzzle-game.md
+  greenfield-facilitator-notes.md
   flock-hands-on.md
   flock-facilitator-notes.md
   harness-matrix.md
@@ -78,7 +81,13 @@ Jeder Konzeptordner folgt demselben Muster:
 python -m unittest discover -s playground/tiny-issue-tracker/tests
 ```
 
-4. Realprojekt-Track vorbereiten:
+4. Greenfield-Track lesen:
+
+```text
+resources/greenfield-puzzle-game.md
+```
+
+5. Realprojekt-Track vorbereiten:
 
 ```bash
 git clone https://github.com/whiteducksoftware/flock.git
@@ -87,7 +96,7 @@ git checkout lecture/timer-precision-bug-start
 uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
 ```
 
-5. Mit Modul 01 starten. Ab Modul 02 ist Flock der empfohlene Hands-on-Kontext.
+6. Mit Modul 01 starten. Ab Modul 05 werden Greenfield Puzzle und Flock bewusst verglichen.
 
 ## Haltung
 
