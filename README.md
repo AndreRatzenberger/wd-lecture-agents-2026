@@ -6,6 +6,11 @@ Ziel: Studierende sollen nicht nur wissen, dass Agents Code schreiben koennen. S
 
 Der Kurs ist bewusst harness-neutral. Die Beispiele sind fuer Codex, Claude Code und GitHub Copilot gedacht, aber die Konzepte tragen auch zu Cursor, Cline, Windsurf, Gemini CLI, OpenCode und anderen Agent-Umgebungen.
 
+Die Hands-ons haben zwei Ebenen:
+
+- `playground/tiny-issue-tracker`: sehr kleiner Warm-up fuer den ersten Agent-Contract.
+- [Flock Hands-on](resources/flock-hands-on.md): echtes Repo, echter Bug, echter Verifikationsdruck.
+
 ## Lernversprechen
 
 Nach 4 Stunden koennen Teilnehmende:
@@ -43,13 +48,15 @@ concepts/
     further-reading.md
   ...
 playground/tiny-issue-tracker/
-  Kleine Uebungs-Codebase fuer Agentenaufgaben
+  Kleine Warm-up-Codebase fuer Agentenaufgaben
 examples/
   skills/
   plugins/
   mcp/
 resources/
   facilitator-guide.md
+  flock-hands-on.md
+  flock-facilitator-notes.md
   harness-matrix.md
   prompt-cards.md
   research-notes.md
@@ -63,16 +70,24 @@ Jeder Konzeptordner folgt demselben Muster:
 
 ## Schnellstart fuer Teilnehmende
 
-1. Repo klonen oder lokal oeffnen.
+1. Dieses Repo klonen oder lokal oeffnen.
 2. Einen Agent-Harness waehlen: Codex, Claude Code, GitHub Copilot, Cursor, Cline, Windsurf oder aehnlich.
-3. In `playground/tiny-issue-tracker` wechseln.
-4. Tests laufen lassen:
+3. Warm-up testen:
 
 ```bash
-python -m unittest discover -s tests
+python -m unittest discover -s playground/tiny-issue-tracker/tests
 ```
 
-5. Mit Modul 01 starten und die Prompts in den Workshops kopieren.
+4. Realprojekt-Track vorbereiten:
+
+```bash
+git clone https://github.com/whiteducksoftware/flock.git
+cd flock
+git checkout lecture/timer-precision-bug-start
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
+```
+
+5. Mit Modul 01 starten. Ab Modul 02 ist Flock der empfohlene Hands-on-Kontext.
 
 ## Haltung
 

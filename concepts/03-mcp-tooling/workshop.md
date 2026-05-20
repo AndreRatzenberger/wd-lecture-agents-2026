@@ -10,12 +10,12 @@ Du entscheidest fuer ein Szenario, ob MCP sinnvoll ist, und entwirfst eine siche
 
 ## Szenario
 
-Du willst, dass ein Coding Agent Bugs aus einem Issue Tracker behebt. Er braucht:
+Du willst, dass ein Coding Agent einen Flock-Bug aus einem GitHub-Issue oder PR-Kontext nachvollzieht. Er braucht:
 
 - den aktuellen Issue
 - Repo-Dateien
 - Testbefehle
-- vielleicht Browser-Reproduktion
+- vielleicht den Loesungs-PR zum spaeteren Vergleich
 - vielleicht PR-Erstellung
 
 ## Schritt 1: Kontext klassifizieren
@@ -27,6 +27,7 @@ Fuellen:
 | Repo-Code | lokal | ja | eher nein, Host kann Dateien lesen |
 | Testbefehl | Repo-Doku | selten | nein, gehoert in Instructions |
 | Issue Beschreibung | GitHub/Linear/Jira | ja | ja |
+| Loesungs-PR | GitHub | ja | ja, aber erst nach eigener Diagnose |
 | Browser-Zustand | laufende App | ja | ja, wenn UI relevant |
 | Coding Style | Repo-Regel | selten | nein, Instructions/Skill |
 
@@ -38,7 +39,7 @@ Beispiel:
 
 ```text
 1. GitHub MCP: Issues und PRs lesen/schreiben.
-2. Playwright MCP: UI-Flow reproduzieren und Screenshots machen.
+2. Playwright MCP: UI-Flow reproduzieren und Screenshots machen, falls der Bug sichtbar ist.
 ```
 
 Begruendung:
@@ -64,6 +65,7 @@ Wie erkenne ich falsche oder boesartige Tool-Ausgaben?
 ```text
 You may use MCP tools only for:
 - reading the issue
+- reading PR #412 after your own diagnosis
 - reproducing the UI if needed
 
 Do not use MCP tools to write, close, delete, or publish anything unless I explicitly approve.

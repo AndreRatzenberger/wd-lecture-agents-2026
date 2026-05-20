@@ -26,7 +26,18 @@ python --version
 python -m unittest discover -s playground/tiny-issue-tracker/tests
 ```
 
-Die Tests duerfen am Anfang rot sein. Das ist Absicht. Das Playground-Projekt ist ein Arbeitsobjekt.
+Die Playground-Tests duerfen am Anfang rot sein. Das ist Absicht. Der Playground ist nur der Warm-up.
+
+Bereite zusaetzlich den Flock-Track vor:
+
+```bash
+git clone https://github.com/whiteducksoftware/flock.git
+cd flock
+git checkout lecture/timer-precision-bug-start
+uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
+```
+
+Der Flock-Test muss rot sein. Die Failure-Zeile soll auf `2026-05-20` vs `2026-05-19` zeigen. Siehe [flock-facilitator-notes.md](flock-facilitator-notes.md).
 
 ## Live-Demo-Ideen
 
@@ -41,10 +52,10 @@ Fix the app.
 Besser:
 
 ```text
-Goal: Fix the failing tests in playground/tiny-issue-tracker.
-Context: Start by reading README.md, issue_tracker.py, and tests.
-Constraints: Keep the app dependency-free. Make the smallest change that explains the test failure.
-Done when: unittest passes and you summarize the changed behavior.
+Goal: Fix the failing Flock timer precision regression.
+Context: Start by reading AGENTS.md, README.md, timer.py, and tests/test_timer_component.py.
+Constraints: Do not read PR #412 before diagnosing. Do not change the regression test unless it is wrong.
+Done when: the focused pytest command passes and you summarize the changed behavior.
 ```
 
 Der Effekt ist sofort sichtbar: Der Agent exploriert gezielter, macht kleinere Diffs und erklaert besser.
@@ -80,12 +91,14 @@ Wenn die Gruppe sehr frisch ist:
 - Modul 03 MCP kuerzen
 - Modul 06 Orchestration einfacher halten
 - mehr Zeit fuer Modul 02 und 07 geben
+- Flock nur als gefuehrte Demo verwenden, nicht als freie Aufgabe
 
 Wenn die Gruppe sehr stark ist:
 
 - Modul 04 Skill bauen lassen
 - Modul 05 Mini-Spec in echte Tasks splitten lassen
 - Modul 06 mit zwei parallelen Agent-Rollen simulieren lassen
+- Nach dem Fix den echten PR #412 als Review-Vergleich nutzen
 
 ## Moderationssaetze
 
@@ -93,6 +106,7 @@ Wenn die Gruppe sehr stark ist:
 - "Wenn ihr den Prompt nicht reviewen koennt, koennt ihr den Output auch nicht gut reviewen."
 - "MCP gibt Haende. Skills geben Gewohnheiten. Specs geben Richtung. Reviews geben Bremsen."
 - "Wir wollen keine perfekten Prompts. Wir wollen robuste Arbeitsablaeufe."
+- "Toy-Projekte zeigen, dass Agents Code schreiben koennen. Flock zeigt, ob wir Agents fuehren koennen."
 
 ## Abschlussfrage
 

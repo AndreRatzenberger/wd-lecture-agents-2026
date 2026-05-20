@@ -51,21 +51,21 @@ Die wichtigste Nutzerfaehigkeit ist deshalb nicht "prompt magic", sondern Aufgab
 
 ## Live-Demo
 
-Zeige denselben Bug im Playground mit zwei Prompts.
+Zeige denselben Flock-Bug mit zwei Prompts.
 
 Schlecht:
 
 ```text
-Fix the tests.
+Fix the failing test.
 ```
 
 Besser:
 
 ```text
-Goal: Fix the failing tests in playground/tiny-issue-tracker.
-Context: Read README.md, issue_tracker.py, and tests/test_issue_tracker.py first.
-Constraints: No external dependencies. Keep the public API stable.
-Done when: python -m unittest discover -s playground/tiny-issue-tracker/tests passes.
+Goal: Fix the failing Flock timer precision regression.
+Context: Read AGENTS.md, README.md, timer.py, and tests/test_timer_component.py first.
+Constraints: Do not read PR #412 before diagnosing. Do not change the regression test unless it is wrong.
+Done when: uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q passes.
 Work style: Read first, explain the likely cause, then make the smallest change.
 ```
 
