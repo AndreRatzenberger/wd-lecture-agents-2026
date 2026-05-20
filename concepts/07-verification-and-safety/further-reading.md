@@ -15,4 +15,4 @@
 
 ## Vertiefungsfrage
 
-Was ist in deinem echten Projekt der staerkste Beweis fuer "done": Unit Test, Integration Test, Browser Flow, Benchmark, Review oder etwas anderes?
+Was ist in deinem echten Projekt der stärkste Beweis für "done": Unit Test, Integration Test, Browser Flow, Benchmark, Review oder etwas anderes?

@@ -2,7 +2,7 @@
 
 ## One-liner
 
-MCP ist USB-C fuer Agentenwerkzeuge: ein Standard, damit unterschiedliche Agent Hosts externe Tools, Daten und Workflows anschliessen koennen.
+MCP ist USB-C für Agentenwerkzeuge: ein Standard, damit unterschiedliche Agent Hosts externe Tools, Daten und Workflows anschließen können.
 
 ## Warum das wichtig ist
 
@@ -19,15 +19,15 @@ Mit MCP kann der Agent diese Dinge als Tool oder Resource abrufen, wenn der Host
 
 Die Spezifikation unterscheidet vor allem:
 
-- **Tools**: Funktionen, die der Agent ausfuehren kann.
-- **Resources**: Kontext oder Daten, die gelesen werden koennen.
+- **Tools**: Funktionen, die der Agent ausführen kann.
+- **Resources**: Kontext oder Daten, die gelesen werden können.
 - **Prompts**: wiederverwendbare Vorlagen oder Workflows.
 
 Merksatz:
 
 ```text
 Resources geben Augen.
-Tools geben Haende.
+Tools geben Hände.
 Prompts geben Startbahnen.
 ```
 
@@ -35,8 +35,8 @@ Prompts geben Startbahnen.
 
 Nutze MCP, wenn:
 
-- Kontext ausserhalb des Repos liegt
-- Daten aktuell sein muessen
+- Kontext außerhalb des Repos liegt
+- Daten aktuell sein müssen
 - ein Tool reproduzierbar angebunden werden soll
 - mehrere Personen denselben Zugriff brauchen
 - Copy/Paste zum Engpass wird
@@ -46,15 +46,15 @@ Nutze MCP nicht reflexartig, wenn:
 - eine kleine Datei im Repo reicht
 - ein einmaliger Prompt reicht
 - das Tool zu viele Rechte braucht
-- niemand den Server geprueft hat
+- niemand den Server geprüft hat
 
 ## Security-Haken
 
-MCP-Tools koennen echte Aktionen ausfuehren. Tool-Beschreibungen und externe Daten koennen prompt-injection-artig wirken. Deshalb:
+MCP-Tools können echte Aktionen ausführen. Tool-Beschreibungen und externe Daten können prompt-injection-artig wirken. Deshalb:
 
-- nur vertrauenswuerdige Server einbinden
+- nur vertrauenswürdige Server einbinden
 - Rechte klein halten
-- vor Tool-Ausfuehrung verstehen, was passiert
+- vor Tool-Ausführung verstehen, was passiert
 - Secrets nicht leichtfertig exponieren
 - Outputs kritisch lesen
 
@@ -73,4 +73,4 @@ Antwort:
 
 ## Takeaway
 
-MCP macht den Agenten nicht automatisch klug. MCP macht relevante Welt zugaenglich. Klug wird es erst mit gutem Scope und guter Verifikation.
+MCP macht den Agenten nicht automatisch klug. MCP macht relevante Welt zugänglich. Klug wird es erst mit gutem Scope und guter Verifikation.

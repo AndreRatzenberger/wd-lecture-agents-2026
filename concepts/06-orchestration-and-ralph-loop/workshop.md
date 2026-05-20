@@ -1,8 +1,8 @@
-# Workshop: Ralph Loop fuer Greenfield und Flock
+# Workshop: Ralph Loop für Greenfield und Flock
 
 ## Ziel
 
-Du fuehrst einen Agenten in fuenf klaren Phasen durch zwei Situationen:
+Du führst einen Agenten in fünf klaren Phasen durch zwei Situationen:
 
 - Greenfield: erste Puzzle-Spiel-Slice aus einer Spec bauen.
 - Brownfield: Flock-Bug in bestehender Codebase reparieren.
@@ -106,7 +106,7 @@ Restate:
 Wait for confirmation before editing.
 ```
 
-Wenn du alleine arbeitest, bestaetige selbst:
+Wenn du alleine arbeitest, bestätige selbst:
 
 ```text
 Confirmed. Continue to Produce.
@@ -142,11 +142,11 @@ Wenn dein Harness Subagents oder custom agents kann:
 2. Builder: implement smallest fix.
 3. Reviewer: compare diff against request.
 
-Wenn nicht, fuehre die drei Prompts nacheinander im selben Chat aus.
+Wenn nicht, führe die drei Prompts nacheinander im selben Chat aus.
 
 ## Ergebnis
 
-Du hast aus zwei amorphen Auftraegen kontrollierte Arbeitssequenzen gemacht:
+Du hast aus zwei amorphen Aufträgen kontrollierte Arbeitssequenzen gemacht:
 
 - Greenfield: "build a game" wird zu PRD -> Slice -> Tests -> Beweis.
 - Brownfield: "fix the bug" wird zu Repo-Lesen -> Scope -> Fix -> Beweis.

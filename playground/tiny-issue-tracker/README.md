@@ -1,8 +1,8 @@
 # Tiny Issue Tracker
 
-Mini-Codebase fuer die Hands-on-Aufgaben.
+Mini-Codebase für die Hands-on-Aufgaben.
 
-Es ist absichtlich klein, dependency-free und leicht kaputt. Der Punkt ist nicht Python. Der Punkt ist Agentenfuehrung.
+Es ist absichtlich klein, dependency-free und leicht kaputt. Der Punkt ist nicht Python. Der Punkt ist Agentenführung.
 
 ## Dateien
 
@@ -32,4 +32,4 @@ Constraints: No external dependencies. Keep the API stable unless a test proves 
 Done when: unittest passes and you summarize the behavior change.
 ```
 
-Wenn du festhaengst, lies [SOLUTION.md](SOLUTION.md). Nicht vorher. Der kleine Schmerz gehoert zum Lernmoment.
+Wenn du festhängst, lies [SOLUTION.md](SOLUTION.md). Nicht vorher. Der kleine Schmerz gehört zum Lernmoment.

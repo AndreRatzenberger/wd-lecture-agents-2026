@@ -9,10 +9,10 @@
 
 ## Gute MCP-Beispiele
 
-- Context7 MCP fuer aktuelle Doku: <https://github.com/upstash/context7>
-- Playwright MCP fuer Browser-Inspektion: <https://playwright.dev/mcp/introduction>
+- Context7 MCP für aktuelle Doku: <https://github.com/upstash/context7>
+- Playwright MCP für Browser-Inspektion: <https://playwright.dev/mcp/introduction>
 - GitHub MCP Server: <https://github.com/github/github-mcp-server>
 
 ## Vertiefungsfrage
 
-Welche Daten kopierst du heute noch manuell in Prompts, obwohl ein sauber gescopter MCP-Zugang besser waere?
+Welche Daten kopierst du heute noch manuell in Prompts, obwohl ein sauber gescopter MCP-Zugang besser wäre?

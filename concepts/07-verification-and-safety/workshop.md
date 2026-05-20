@@ -1,8 +1,8 @@
-# Workshop: Abschluss-Audit fuer Agentenarbeit
+# Workshop: Abschluss-Audit für Agentenarbeit
 
 ## Ziel
 
-Du lernst, eine Agent-Aenderung nicht nur anzunehmen, sondern gegen Auftrag, Diff und Tests zu pruefen.
+Du lernst, eine Agent-Änderung nicht nur anzunehmen, sondern gegen Auftrag, Diff und Tests zu prüfen.
 
 ## Dauer
 
@@ -10,7 +10,7 @@ Du lernst, eine Agent-Aenderung nicht nur anzunehmen, sondern gegen Auftrag, Dif
 
 ## Schritt 1: Diff anzeigen
 
-Nach einer Agent-Aenderung:
+Nach einer Agent-Änderung:
 
 ```bash
 git diff
@@ -18,18 +18,18 @@ git diff
 
 Frage:
 
-- Sind nur erwartete Dateien geaendert?
-- Ist die Aenderung kleiner als gedacht?
+- Sind nur erwartete Dateien geändert?
+- Ist die Änderung kleiner als gedacht?
 - Gibt es neue Dependencies?
 - Hat der Agent Tests angepasst, statt Verhalten zu fixen?
 
-## Schritt 2: Tests ausfuehren
+## Schritt 2: Tests ausführen
 
 ```bash
 uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
 ```
 
-Wenn der Agent sagt "tests pass", aber du keinen Output gesehen hast, zaehlt es nicht.
+Wenn der Agent sagt "tests pass", aber du keinen Output gesehen hast, zählt es nicht.
 
 ## Schritt 3: Agenten-Self-Review erzwingen
 
@@ -76,4 +76,4 @@ Would improve next:
 
 ## Ergebnis
 
-Du hast eine Agent-Aenderung wie Engineering behandelt: mit Diff, Test, Review und Restrisiko.
+Du hast eine Agent-Änderung wie Engineering behandelt: mit Diff, Test, Review und Restrisiko.

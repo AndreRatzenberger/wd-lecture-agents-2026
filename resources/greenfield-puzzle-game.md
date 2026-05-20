@@ -1,6 +1,6 @@
 # Greenfield Puzzle Game
 
-Dieses Blatt ist der Greenfield-Track fuer den Workshop. Hier gibt es noch kein bestehendes Produkt, keine Tests und keine Codebase. Genau deshalb ist die Aufgabe gefaehrlich: Ein Agent kann sofort eine huebsche Demo bauen und trotzdem am eigentlichen Produkt vorbeilaufen.
+Dieses Blatt ist der Greenfield-Track für den Workshop. Hier gibt es noch kein bestehendes Produkt, keine Tests und keine Codebase. Genau deshalb ist die Aufgabe gefährlich: Ein Agent kann sofort eine hübsche Demo bauen und trotzdem am eigentlichen Produkt vorbeilaufen.
 
 Der Lernpunkt:
 
@@ -8,9 +8,9 @@ Der Lernpunkt:
 
 ## Ziel
 
-Studierende sollen aus einem vagen Produktwunsch eine pruefbare erste Version eines Puzzle-Spiels ableiten.
+Studierende sollen aus einem vagen Produktwunsch eine prüfbare erste Version eines Puzzle-Spiels ableiten.
 
-Sie ueben:
+Sie üben:
 
 - einen offenen Kreativauftrag in klare Optionen zu zerlegen
 - PRD, Mechanics Spec und Non-goals zu schreiben
@@ -66,7 +66,7 @@ Then recommend one concept and explain why it is the best workshop candidate.
 
 Review-Fragen:
 
-- Ist die Mechanik in einem Satz erklaerbar?
+- Ist die Mechanik in einem Satz erklärbar?
 - Kann man nach 10 Sekunden losspielen?
 - Ist die Losing Condition fair oder nur Straf-Zufall?
 - Kann man die Logik ohne DOM testen?
@@ -154,7 +154,7 @@ Return:
 - explicit non-goals
 ```
 
-## Schritt 6: Ralph Loop fuer die Implementierung
+## Schritt 6: Ralph Loop für die Implementierung
 
 Jetzt erst darf gebaut werden.
 
@@ -180,27 +180,27 @@ Stop after verification. Report changed files, commands run, browser evidence, a
 
 ## Production-Ready Gates
 
-"Production ready" zaehlt nur, wenn es konkrete Beweise gibt.
+"Production ready" zählt nur, wenn es konkrete Beweise gibt.
 
-Minimum fuer die Workshop-Slice:
+Minimum für die Workshop-Slice:
 
 - Game startet ohne Setup-Theater
 - Core-Mechanik ist spielbar
 - UI passt auf Mobile und Desktop
-- Spiel ist ohne Sound vollstaendig spielbar
+- Spiel ist ohne Sound vollständig spielbar
 - Losing Condition ist sichtbar und fair
 - Restart funktioniert
 - Logik ist von UI getrennt
-- Unit Tests fuer Generator, Moves, Score und Loss laufen
+- Unit Tests für Generator, Moves, Score und Loss laufen
 - Browser-Automation testet Start, Move, Lose, Restart und Mobile Viewport
-- Build laeuft
+- Build läuft
 - Browser-Konsole hat keine Fehler
-- README erklaert Regeln, Commands und Deployment
+- README erklärt Regeln, Commands und Deployment
 
 ## Abschlussfragen
 
-- Was haette der Agent ohne PRD wahrscheinlich erfunden?
+- Was hätte der Agent ohne PRD wahrscheinlich erfunden?
 - Welche Non-goals haben Scope gerettet?
-- Welche Tests pruefen wirklich Spielregeln, nicht nur DOM?
+- Welche Tests prüfen wirklich Spielregeln, nicht nur DOM?
 - Wo klingt "production ready" noch wie Theater?
-- Was waere die naechste Slice?
+- Was wäre die nächste Slice?

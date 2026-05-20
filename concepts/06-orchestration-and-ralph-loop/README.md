@@ -12,7 +12,7 @@ Ein einzelner langer Agent-Lauf wirkt bequem:
 Do everything.
 ```
 
-Aber lange Laeufe driften:
+Aber lange Läufe driften:
 
 - Kontext wird laut
 - Zwischenentscheidungen verschwimmen
@@ -24,7 +24,7 @@ Orchestrierung bringt Rhythmus.
 
 ## Der Ralph Loop
 
-Fuer diesen Workshop verwenden wir Ralph als einfache Merkform:
+Für diesen Workshop verwenden wir Ralph als einfache Merkform:
 
 ```text
 Read -> Ask -> Lock -> Produce -> Halt
@@ -56,18 +56,18 @@ Stoppen. Diff, Tests, Risiken zeigen. Nicht heimlich weitermachen.
 - **Researcher / Builder / Reviewer**: Rollen trennen.
 - **Parallel hypotheses**: Zwei Agenten untersuchen unterschiedliche Ursachen.
 - **Worktree isolation**: parallele Agenten in getrennten Arbeitsbereichen.
-- **Review gates**: Nach jedem Schritt menschliche oder agentische Pruefung.
+- **Review gates**: Nach jedem Schritt menschliche oder agentische Prüfung.
 
 ## Greenfield vs Brownfield
 
-Der Loop bleibt gleich, aber die Bedeutung der Phasen aendert sich:
+Der Loop bleibt gleich, aber die Bedeutung der Phasen ändert sich:
 
 | Phase | Greenfield Puzzle | Brownfield Flock |
 | --- | --- | --- |
 | Read | PRD, Mechanics Spec, Testplan | AGENTS.md, Code, Tests, Failure |
 | Ask | Produkt-/Scope-Blocker | Repo-/Verhaltens-Blocker |
 | Lock | erste Slice und Non-goals | Fix-Scope und betroffene Dateien |
-| Produce | neue Slice mit Tests | kleine Aenderung mit Regressionstest |
+| Produce | neue Slice mit Tests | kleine Änderung mit Regressionstest |
 | Halt | Gates und Browser-Beweis | Diff, pytest, Restrisiko |
 
 ## Harness-neutraler Trick

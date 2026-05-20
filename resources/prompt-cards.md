@@ -15,7 +15,7 @@ Constraints:
 <Was darf nicht passieren? Welche Patterns, Technologien, Limits gelten?>
 
 Done when:
-<Welche Tests, Checks, Diffs oder sichtbaren Verhaltensaenderungen beweisen Erfolg?>
+<Welche Tests, Checks, Diffs oder sichtbaren Verhaltensänderungen beweisen Erfolg?>
 
 Work style:
 Read first. Make a short plan. Keep changes small. Report exact verification.

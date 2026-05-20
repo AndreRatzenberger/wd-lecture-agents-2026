@@ -22,4 +22,4 @@ Die lokale These: Skills sind immer weniger "Prompt Packs" und immer mehr UX-, W
 
 ## Vertiefungsfrage
 
-Welche wiederholte Arbeitsweise in deinem Studium oder Projekt waere als Skill nuetzlicher als als PDF-Anleitung?
+Welche wiederholte Arbeitsweise in deinem Studium oder Projekt wäre als Skill nützlicher als als PDF-Anleitung?

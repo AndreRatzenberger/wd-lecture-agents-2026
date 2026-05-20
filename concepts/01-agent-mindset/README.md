@@ -2,7 +2,7 @@
 
 ## One-liner
 
-Ein Coding Agent ist kein besseres Autocomplete. Er ist ein schneller, werkzeugfaehiger Mitarbeiter mit begrenztem Situationsbewusstsein.
+Ein Coding Agent ist kein besseres Autocomplete. Er ist ein schneller, werkzeugfähiger Mitarbeiter mit begrenztem Situationsbewusstsein.
 
 ## Warum das wichtig ist
 
@@ -17,12 +17,12 @@ Mensch: "Warum ist jetzt alles anders?"
 Das Problem ist selten nur das Modell. Das Problem ist oft die Arbeitsumgebung:
 
 - Ziel unklar
-- Kontext zufaellig
+- Kontext zufällig
 - Constraints fehlen
 - Done-Kriterien fehlen
 - Verifikation wird erst am Ende erfunden
 
-Ein Agent wird besser, wenn du ihn wie Arbeit fuehrst:
+Ein Agent wird besser, wenn du ihn wie Arbeit führst:
 
 ```text
 Goal -> Context -> Constraints -> Done when -> Verification
@@ -30,22 +30,22 @@ Goal -> Context -> Constraints -> Done when -> Verification
 
 ## Kurztheorie
 
-High-Level Coding Agents koennen typischerweise:
+High-Level Coding Agents können typischerweise:
 
-- Dateien lesen und aendern
-- Shell-Kommandos ausfuehren
+- Dateien lesen und ändern
+- Shell-Kommandos ausführen
 - Tests starten
 - Web oder Dokumentation recherchieren
-- externe Tools ueber MCP oder Integrationen nutzen
-- laengere Aufgaben planen und in Schritte zerlegen
+- externe Tools über MCP oder Integrationen nutzen
+- längere Aufgaben planen und in Schritte zerlegen
 
-Das macht sie maechtig, aber auch gefaehrlich. Ein plausibler Agent ist nicht automatisch ein korrekter Agent.
+Das macht sie mächtig, aber auch gefährlich. Ein plausibler Agent ist nicht automatisch ein korrekter Agent.
 
-Die wichtigste Nutzerfaehigkeit ist deshalb nicht "prompt magic", sondern Aufgabenarchitektur:
+Die wichtigste Nutzerfähigkeit ist deshalb nicht "prompt magic", sondern Aufgabenarchitektur:
 
 1. Was ist das Ziel?
 2. Welche Welt soll der Agent sehen?
-3. Welche Grenzen darf er nicht ueberschreiten?
+3. Welche Grenzen darf er nicht überschreiten?
 4. Woran erkennt er Fertigstellung?
 5. Welche Beweise muss er liefern?
 
@@ -75,12 +75,12 @@ Die Aha-Frage:
 
 ## Kernbegriffe
 
-- **Harness**: Die Umgebung, in der der Agent laeuft, zum Beispiel Codex, Claude Code oder Copilot.
-- **Context window**: Das Arbeitsgedaechtnis des Modells.
+- **Harness**: Die Umgebung, in der der Agent läuft, zum Beispiel Codex, Claude Code oder Copilot.
+- **Context window**: Das Arbeitsgedächtnis des Modells.
 - **Tool use**: Der Agent kann Funktionen, Shell, Dateien, Browser oder MCP-Tools verwenden.
-- **Agent Contract**: Die explizite Vereinbarung ueber Ziel, Grenzen und Beweise.
-- **Operator Skill**: Deine Faehigkeit, die Arbeit so zu strukturieren, dass der Agent weniger raten muss.
+- **Agent Contract**: Die explizite Vereinbarung über Ziel, Grenzen und Beweise.
+- **Operator Skill**: Deine Fähigkeit, die Arbeit so zu strukturieren, dass der Agent weniger raten muss.
 
 ## Takeaway
 
-Je groesser die Autonomie, desto wichtiger ist der Auftrag. Gute Agentenarbeit beginnt vor dem ersten Edit.
+Je größer die Autonomie, desto wichtiger ist der Auftrag. Gute Agentenarbeit beginnt vor dem ersten Edit.

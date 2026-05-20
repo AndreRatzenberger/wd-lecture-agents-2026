@@ -16,9 +16,9 @@ Vom Repo-Root:
 python -m unittest discover -s playground/tiny-issue-tracker/tests
 ```
 
-Die Tests duerfen fehlschlagen. Das ist Arbeitsmaterial.
+Die Tests dürfen fehlschlagen. Das ist Arbeitsmaterial.
 
-Fuer den Realprojekt-Track:
+Für den Realprojekt-Track:
 
 ```bash
 git clone https://github.com/whiteducksoftware/flock.git
@@ -41,14 +41,14 @@ Beobachte:
 
 - Fragt der Agent nach dem richtigen Ordner?
 - Liest er die Tests?
-- Macht er zu grosse Aenderungen?
+- Macht er zu große Änderungen?
 - Nennt er den Verifikationsbefehl?
 
 Stoppe den Agenten, wenn er zu viel driftet.
 
 ## Schritt 2: Agent Contract schreiben
 
-Kopiere und fuelle aus:
+Kopiere und fülle aus:
 
 ```text
 Goal:
@@ -74,7 +74,7 @@ Read first. Explain likely causes. Then edit. Report exact verification.
 
 ## Schritt 3: Agent arbeiten lassen
 
-Fuehre den Contract in deinem Harness aus.
+Führe den Contract in deinem Harness aus.
 
 Wenn dein Harness Plan Mode hat, nutze ihn. Wenn nicht, schreibe dazu:
 
@@ -84,15 +84,15 @@ Before editing, show a short plan.
 
 ## Schritt 4: Mini-Retro
 
-Vergleiche die beiden Laeufe:
+Vergleiche die beiden Läufe:
 
 - Welche Dateien wurden gelesen?
-- Wie gross war der Diff?
+- Wie groß war der Diff?
 - Hat der Agent Done-Kriterien beachtet?
-- War die Abschlussantwort pruefbar?
+- War die Abschlussantwort prüfbar?
 
 ## Ergebnis
 
-Du hast einen wiederverwendbaren Task-Prompt fuer Coding Agents und hast gesehen, warum echte Repos bessere Agentenfuehrung erzwingen als Spielzeug-Code.
+Du hast einen wiederverwendbaren Task-Prompt für Coding Agents und hast gesehen, warum echte Repos bessere Agentenführung erzwingen als Spielzeug-Code.
 
 Speichere deine beste Version lokal in deinen Notizen oder in `resources/prompt-cards.md`, wenn du den Kurs weiterentwickelst.

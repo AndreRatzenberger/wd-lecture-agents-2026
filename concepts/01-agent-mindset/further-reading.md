@@ -8,10 +8,10 @@
 
 ## Besonders relevant
 
-- Codex empfiehlt fuer gute Prompts explizit Goal, Context, Constraints und Done-when.
+- Codex empfiehlt für gute Prompts explizit Goal, Context, Constraints und Done-when.
 - Copilot Cloud Agent betont, dass Repository-Wissen, custom instructions, MCP, custom agents, hooks und skills die Agent-Leistung verbessern.
-- Claude Code positioniert sich als agentisches Terminal-Tool, das plant, Code schreibt und prueft.
+- Claude Code positioniert sich als agentisches Terminal-Tool, das plant, Code schreibt und prüft.
 
 ## Reflexionsfrage
 
-Welche Information hast du deinem Agenten heute gegeben, die eigentlich dauerhaft ins Repo gehoert?
+Welche Information hast du deinem Agenten heute gegeben, die eigentlich dauerhaft ins Repo gehört?

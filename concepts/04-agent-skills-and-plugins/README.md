@@ -2,7 +2,7 @@
 
 ## One-liner
 
-Skills sind wiederverwendbare Arbeitsgewohnheiten fuer Agents. Plugins sind die Verpackung, mit der man solche Faehigkeiten verteilt.
+Skills sind wiederverwendbare Arbeitsgewohnheiten für Agents. Plugins sind die Verpackung, mit der man solche Fähigkeiten verteilt.
 
 ## Warum das wichtig ist
 
@@ -27,20 +27,20 @@ Das `SKILL.md` sagt:
 
 ## Progressive Disclosure
 
-Der grosse Trick ist Kontext-Sparsamkeit:
+Der große Trick ist Kontext-Sparsamkeit:
 
 1. Der Agent sieht zuerst nur Name und Beschreibung.
-2. Wenn die Aufgabe passt, laedt er das volle `SKILL.md`.
+2. Wenn die Aufgabe passt, lädt er das volle `SKILL.md`.
 3. Weitere Dateien werden nur bei Bedarf gelesen.
 
 Deshalb sind Skills so interessant: Sie bringen Methode in den Agenten, ohne jede Session mit allen Details zu fluten.
 
 ## Caveman als Aha-Beispiel
 
-`JuliusBrussee/caveman` zeigt den Effekt sehr schoen:
+`JuliusBrussee/caveman` zeigt den Effekt sehr schön:
 
-- kleine Idee: weniger Fuellwoerter
-- agent-native Verpackung: Skill/Plugin/Rules fuer viele Harnesses
+- kleine Idee: weniger Füllwörter
+- agent-native Verpackung: Skill/Plugin/Rules für viele Harnesses
 - messbarer Nutzen: weniger Output-Tokens
 - hoher Wiedererkennungswert: man versteht sofort, was passiert
 
@@ -52,7 +52,7 @@ Der Kurs kopiert nicht den Stil. Der Kurs kopiert die Lektion:
 
 | Ding | Zweck |
 | --- | --- |
-| Instruction file | dauerhaft gueltige Projektregeln |
+| Instruction file | dauerhaft gültige Projektregeln |
 | Skill | on-demand Methode oder Expertise |
 | MCP | externe Tools, Daten, Aktionen |
 | Plugin | verteilbares Paket aus Skills, Tools und Integrationen |

@@ -18,11 +18,11 @@ Beispiele:
 - Sie vergessen Tests.
 - Sie installieren Dependencies ohne Grund.
 - Sie ignorieren vorhandene Patterns.
-- Sie erklaeren viel, aber liefern keinen Beweis.
+- Sie erklären viel, aber liefern keinen Beweis.
 
 ## Schritt 2: Regeln operationalisieren
 
-Wandle jede Reibung in eine pruefbare Regel um.
+Wandle jede Reibung in eine prüfbare Regel um.
 
 Schlecht:
 
@@ -88,4 +88,4 @@ Audit your own work against the agent instructions. Which rules did you follow, 
 
 ## Ergebnis
 
-Du hast eine erste Version eines Repo-Agent-Contracts und ein Gefuehl dafuer, welche Regeln wirklich helfen.
+Du hast eine erste Version eines Repo-Agent-Contracts und ein Gefühl dafür, welche Regeln wirklich helfen.

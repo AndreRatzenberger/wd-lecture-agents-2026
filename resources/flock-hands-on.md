@@ -1,18 +1,18 @@
 # Flock Hands-on
 
-Dieses Blatt ist der Realprojekt-Track fuer den Workshop. Der kleine Issue Tracker bleibt gut fuer den ersten Aha-Moment. Flock zeigt danach, worum es wirklich geht: einen Agenten durch ein echtes Repo fuehren.
+Dieses Blatt ist der Realprojekt-Track für den Workshop. Der kleine Issue Tracker bleibt gut für den ersten Aha-Moment. Flock zeigt danach, worum es wirklich geht: einen Agenten durch ein echtes Repo führen.
 
 ## Ziel
 
 Studierende sollen an einem echten Bug arbeiten, der klein aussieht, aber ohne gutes Lesen schwer zu finden ist.
 
-Sie ueben:
+Sie üben:
 
 - Repo-Onboarding mit `AGENTS.md`, README und Testdateien
 - einen schlechten Auftrag in einen Agent Contract verwandeln
-- eine Mini-Spec schreiben, bevor Code geaendert wird
+- eine Mini-Spec schreiben, bevor Code geändert wird
 - einen engen Regressionstest als Beweis verwenden
-- Diff und Tests vor der Abschlussantwort pruefen
+- Diff und Tests vor der Abschlussantwort prüfen
 
 ## Setup
 
@@ -31,9 +31,9 @@ cd flock
 git checkout lecture/timer-precision-bug-start
 ```
 
-Der Branch enthaelt einen bewusst fehlschlagenden Regressionstest fuer einen Timer-Bug.
+Der Branch enthält einen bewusst fehlschlagenden Regressionstest für einen Timer-Bug.
 
-Pruefe den Startzustand:
+Prüfe den Startzustand:
 
 ```bash
 uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
@@ -45,7 +45,7 @@ Erwartung:
 FAILED tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds
 ```
 
-Wenn dein Harness oder Rechner langsam ist: Die erste Ausfuehrung darf etwas dauern, weil `uv` die Umgebung anlegt. Fuer diese Aufgabe brauchst du keinen API-Key.
+Wenn dein Harness oder Rechner langsam ist: Die erste Ausführung darf etwas dauern, weil `uv` die Umgebung anlegt. Für diese Aufgabe brauchst du keinen API-Key.
 
 ## Wichtige Dateien
 
@@ -64,7 +64,7 @@ Nicht zuerst lesen:
 https://github.com/whiteducksoftware/flock/pull/412
 ```
 
-Der PR ist die Loesung. Er ist gut fuer den Abschlussvergleich, aber schlecht fuer den Lernmoment.
+Der PR ist die Lösung. Er ist gut für den Abschlussvergleich, aber schlecht für den Lernmoment.
 
 ## Schlechter Auftrag
 
@@ -78,8 +78,8 @@ Beobachte:
 
 - Findet der Agent die richtige Datei?
 - Liest er `AGENTS.md`?
-- Erklaert er den Zeit-/Microsecond-Fall?
-- Aendert er nur Code, oder auch den Test?
+- Erklärt er den Zeit-/Microsecond-Fall?
+- Ändert er nur Code, oder auch den Test?
 - Nennt er am Ende den exakten Testbefehl?
 
 Stoppe den Lauf, wenn er zu stark driftet.
@@ -152,7 +152,7 @@ Stop. Report changed files, verification, and residual risk.
 
 ## Abschluss-Audit
 
-Nach der Agent-Aenderung:
+Nach der Agent-Änderung:
 
 ```bash
 git diff
@@ -161,9 +161,9 @@ uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calcul
 
 Fragen:
 
-- Ist die Aenderung kleiner als erwartet?
-- Bleibt der Regressionstest unveraendert?
-- Erklaert der Code sowohl "spaeter heute" als auch "schon vorbei"?
+- Ist die Änderung kleiner als erwartet?
+- Bleibt der Regressionstest unverändert?
+- Erklärt der Code sowohl "später heute" als auch "schon vorbei"?
 - Hat der Agent eine Abschlussantwort mit Beweis geliefert?
 
 Zum Schluss darfst du den echten PR anschauen:
@@ -172,4 +172,4 @@ Zum Schluss darfst du den echten PR anschauen:
 https://github.com/whiteducksoftware/flock/pull/412
 ```
 
-Vergleiche nicht nur die Loesung, sondern auch den Arbeitsweg.
+Vergleiche nicht nur die Lösung, sondern auch den Arbeitsweg.

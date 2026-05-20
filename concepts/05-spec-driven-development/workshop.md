@@ -1,4 +1,4 @@
-# Workshop: Spec fuer Greenfield und Flock
+# Workshop: Spec für Greenfield und Flock
 
 ## Ziel
 
@@ -82,7 +82,7 @@ Jetzt dieselbe Spec-Disziplin in einer bestehenden Codebase.
 
 ### Schritt 1: Problem beobachten
 
-Fuehre aus:
+Führe aus:
 
 ```bash
 uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calculate_next_fire_time_same_second_with_microseconds -q
@@ -113,14 +113,14 @@ Keep it under 250 words.
 
 ### Schritt 3: Spec reviewen
 
-Pruefe:
+Prüfe:
 
 - Enthalten die Acceptance Criteria alle fehlschlagenden Tests?
 - Gibt es versteckte neue Features?
 - Ist ein Non-goal genannt?
 - Ist der Testbefehl konkret?
 
-Wenn noetig:
+Wenn nötig:
 
 ```text
 Revise the spec. Remove any feature not required by the tests.
@@ -157,7 +157,7 @@ Return:
 
 ## Ergebnis
 
-Du hast einen vollstaendigen kleinen Spec-Loop durchlaufen:
+Du hast einen vollständigen kleinen Spec-Loop durchlaufen:
 
 ```text
 Problem -> Spec -> Plan -> Code -> Verification -> Audit
@@ -167,5 +167,5 @@ Und du hast den Unterschied gesehen:
 
 ```text
 Greenfield: Spec erzeugt die Arbeitsform.
-Brownfield: Spec begrenzt die Aenderung in bestehender Form.
+Brownfield: Spec begrenzt die Änderung in bestehender Form.
 ```

@@ -1,6 +1,6 @@
 # Solution Notes
 
-Spoiler fuer Facilitators und Selbstlernende.
+Spoiler für Facilitators und Selbstlernende.
 
 ## Erwarteter Startzustand
 
@@ -10,7 +10,7 @@ Der Testbefehl:
 python -m unittest discover -s playground/tiny-issue-tracker/tests
 ```
 
-sollte importieren koennen und dann genau an `test_search_is_case_insensitive` scheitern.
+sollte importieren können und dann genau an `test_search_is_case_insensitive` scheitern.
 
 ## Ursache
 
@@ -35,7 +35,7 @@ def search(self, text: str) -> list[Issue]:
     ]
 ```
 
-`casefold()` ist fuer case-insensitive Vergleiche robuster als `lower()`.
+`casefold()` ist für case-insensitive Vergleiche robuster als `lower()`.
 
 ## Erwarteter Endzustand
 
@@ -48,9 +48,9 @@ OK
 
 ## Gute Agent-Antwort
 
-Eine gute Abschlussantwort enthaelt:
+Eine gute Abschlussantwort enthält:
 
-- geaenderte Datei: `playground/tiny-issue-tracker/issue_tracker.py`
+- geänderte Datei: `playground/tiny-issue-tracker/issue_tracker.py`
 - Verifikation: exakter `python -m unittest ...` Befehl
-- Scope: keine neuen Dependencies, keine API-Aenderung
+- Scope: keine neuen Dependencies, keine API-Änderung
 - Restrisiko: keine Persistenz, keine fuzzy search, nur Titel-Suche getestet

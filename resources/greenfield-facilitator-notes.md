@@ -1,8 +1,8 @@
 # Greenfield Facilitator Notes
 
-Diese Notizen sind fuer die Person vorne im Raum.
+Diese Notizen sind für die Person vorne im Raum.
 
-## Warum diese Uebung existiert
+## Warum diese Übung existiert
 
 Der Flock-Bug ist Brownfield: Die Wahrheit liegt im bestehenden Repo.
 
@@ -11,14 +11,14 @@ Das Puzzle-Spiel ist Greenfield: Die Wahrheit muss erst gebaut werden. Genau dor
 - Agent baut sofort UI statt Produktentscheidung.
 - "Novel and addictive" wird zu Marketingtext statt Mechanik.
 - "Production ready" wird behauptet, aber nicht verifiziert.
-- Tests pruefen Rendering, nicht Spielregeln.
-- Browser-Automation wird versprochen, aber nie wirklich ausgefuehrt.
+- Tests prüfen Rendering, nicht Spielregeln.
+- Browser-Automation wird versprochen, aber nie wirklich ausgeführt.
 
 ## Empfohlene Position im Ablauf
 
-Kurzform fuer 4 Stunden:
+Kurzform für 4 Stunden:
 
-- Modul 05: Greenfield PRD + Mechanics Spec als Hauptuebung
+- Modul 05: Greenfield PRD + Mechanics Spec als Hauptübung
 - Modul 06: Ralph Loop auf erster Implementierungsscheibe
 - Flock danach als Brownfield-Kontrast oder umgekehrt, je nach Gruppe
 
@@ -30,12 +30,12 @@ Wenn wenig Zeit bleibt:
 Wenn die Gruppe stark ist:
 
 - Eine echte erste Slice bauen lassen
-- Playwright-Test oder Browser-MCP-Check wirklich ausfuehren
+- Playwright-Test oder Browser-MCP-Check wirklich ausführen
 - Danach Flock-Bug als "jetzt dasselbe in fremder Codebase" nutzen
 
 ## Gute Puzzle-Kandidaten
 
-Gute Kandidaten fuer eine erste Slice:
+Gute Kandidaten für eine erste Slice:
 
 - kleines Raster
 - klare Einzelaktion
@@ -45,9 +45,9 @@ Gute Kandidaten fuer eine erste Slice:
 - kein Sound als Pflichtmechanik
 - keine komplexe Animation als Kernregel
 
-Beispiele fuer passende Mechanik-Richtungen:
+Beispiele für passende Mechanik-Richtungen:
 
-- Linien/Fluesse umleiten, bis Ueberdruck entsteht
+- Linien/Flüsse umleiten, bis Überdruck entsteht
 - begrenzte Energie in einem prozeduralen Raster verteilen
 - Symmetrien brechen oder erhalten
 - Token mit einfachen Regeln fusionieren, aber Board-Space verlieren
@@ -61,36 +61,36 @@ Schlechte Kandidaten:
 - Multiplayer
 - Puzzle mit vielen handgebauten Levels
 
-## Was "Novel" hier heisst
+## Was "Novel" hier heißt
 
-Novel muss nicht patentfaehig sein. Fuer den Workshop reicht:
+Novel muss nicht patentfähig sein. Für den Workshop reicht:
 
 - nicht nur ein Klon von 2048, Minesweeper, Tetris oder Sudoku
 - ein klarer Twist in der Entscheidung pro Zug
 - eine Losing Condition, die aus der Kernmechanik entsteht
-- genug Tiefe, dass ein zweiter Versuch anders laeuft
+- genug Tiefe, dass ein zweiter Versuch anders läuft
 
 ## Review-Rubrik
 
 Bewerte Agentenoutput hart:
 
-| Kriterium | Gruen | Gelb | Rot |
+| Kriterium | Grün | Gelb | Rot |
 | --- | --- | --- | --- |
-| Mechanik | in einem Satz spielbar erklaert | interessant, aber schwammig | nur Thema oder Mood |
+| Mechanik | in einem Satz spielbar erklärt | interessant, aber schwammig | nur Thema oder Mood |
 | Scope | erste Slice klar | mehrere Features vermischt | ganzes Spiel auf einmal |
 | Tests | Regeln und Generator testbar | nur UI-Smoke | keine echten Assertions |
-| Losing Condition | fair und aus Regeln abgeleitet | funktioniert, aber willkuerlich | Timer/Random-Strafe |
+| Losing Condition | fair und aus Regeln abgeleitet | funktioniert, aber willkürlich | Timer/Random-Strafe |
 | Mobile | Touch konkret beschrieben | "responsive" behauptet | Desktop-only |
 | Production Ready | Commands und Gates konkret | allgemeine Checkliste | reine Behauptung |
 
-## Moderationssaetze
+## Moderationssätze
 
 - "Eine gute Spielidee ist kein Feature-Haufen. Sie ist eine Entscheidung, die man immer wieder treffen will."
 - "Production ready ist kein Adjektiv. Es ist eine Liste von Beweisen."
 - "Wenn die Spielregel nicht ohne DOM testbar ist, ist sie noch nicht sauber verstanden."
 - "Greenfield braucht mehr Spec, nicht weniger, weil noch keine Codebase widerspricht."
 
-## Beispiel fuer eine gute erste Slice
+## Beispiel für eine gute erste Slice
 
 ```text
 Game: Pulse Grid
@@ -110,4 +110,4 @@ Tests:
 - Playwright covers start, one move, loss, restart
 ```
 
-Das Beispiel ist nicht als Pflichtidee gedacht. Es zeigt nur die richtige Granularitaet.
+Das Beispiel ist nicht als Pflichtidee gedacht. Es zeigt nur die richtige Granularität.

@@ -7,25 +7,25 @@ Die Namen unterscheiden sich, die Konzepte sind erstaunlich stabil.
 | Dauerhafter Repo-Kontext | `AGENTS.md` | `CLAUDE.md` | `.github/copilot-instructions.md` oder repo instructions | Agent Contract: Was gilt immer? |
 | Skill | `.agents/skills/<name>/SKILL.md` | `.claude/skills/<name>/SKILL.md` oder Plugin-Skill | `.github/skills`, `.agents/skills`, personal skills | Wiederholbare Expertise als Ordner |
 | Plugin | Codex Plugin mit Skills, Apps, MCP | Claude Code Plugin mit Skills, Agents, Hooks, MCP | eher Skills, custom agents, MCP, instructions | Verteilbares Capability-Paket |
-| MCP | `config.toml`, CLI/App MCP setup | `.mcp.json`, settings, plugin MCP | repo/custom-agent MCP settings | Standardisierte Tool- und Kontextbruecke |
+| MCP | `config.toml`, CLI/App MCP setup | `.mcp.json`, settings, plugin MCP | repo/custom-agent MCP settings | Standardisierte Tool- und Kontextbrücke |
 | Subagent / Custom Agent | Codex subagents, custom TOML agents | subagents und agent teams | custom agents, cloud agent tasks | Isolierte Rolle mit eigenem Kontext |
-| Hook / Automation | Codex hooks, automations | Claude Code hooks | Copilot hooks fuer cloud agent | Wiederholbare Event-Reaktion |
+| Hook / Automation | Codex hooks, automations | Claude Code hooks | Copilot hooks für cloud agent | Wiederholbare Event-Reaktion |
 | Spec Flow | Plan Mode, skills, external Spec Kit | Plan Mode, plugins, Spec Kit | Copilot tasks, Spec Kit, custom prompts | Von Absicht zu Spec zu Plan zu Tasks |
 
 ## Faustregeln
 
-- `AGENTS.md` und Verwandte: fuer Regeln, die fast immer gelten.
-- Skills: fuer Methoden, die manchmal gebraucht werden und mehr Kontext brauchen.
-- MCP: fuer externe Systeme, Live-Daten und Werkzeuge.
-- Plugins: fuer Team-Verteilung und Versionierung.
-- Subagents: fuer isolierte Recherche, Reviews oder parallele Hypothesen.
-- Hooks: fuer stabile Automatisierung, nicht fuer unsichere Denkarbeit.
+- `AGENTS.md` und Verwandte: für Regeln, die fast immer gelten.
+- Skills: für Methoden, die manchmal gebraucht werden und mehr Kontext brauchen.
+- MCP: für externe Systeme, Live-Daten und Werkzeuge.
+- Plugins: für Team-Verteilung und Versionierung.
+- Subagents: für isolierte Recherche, Reviews oder parallele Hypothesen.
+- Hooks: für stabile Automatisierung, nicht für unsichere Denkarbeit.
 
-## Portabilitaet
+## Portabilität
 
 Sehr portabel:
 
-- Skill-Idee und `SKILL.md`-Koerper
+- Skill-Idee und `SKILL.md`-Körper
 - Referenzmaterial, Checklisten, Beispiele
 - MCP-Server als Protokollkonzept
 

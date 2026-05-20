@@ -6,16 +6,16 @@ Ein Agent ist erst fertig, wenn es Beweise gibt. Plausible Sprache ist kein Bewe
 
 ## Warum das wichtig ist
 
-Coding Agents optimieren stark auf Hilfreichkeit. Das kann zu Abschlussantworten fuehren, die besser klingen als der Arbeitsstand ist.
+Coding Agents optimieren stark auf Hilfreichkeit. Das kann zu Abschlussantworten führen, die besser klingen als der Arbeitsstand ist.
 
 Typische Risiken:
 
-- Tests wurden nicht wirklich ausgefuehrt.
-- Der falsche Test wurde ausgefuehrt.
-- Unrelated files wurden veraendert.
+- Tests wurden nicht wirklich ausgeführt.
+- Der falsche Test wurde ausgeführt.
+- Unrelated files wurden verändert.
 - Security oder Datenzugriff wurden nicht bedacht.
 - Der Agent hat einen Workaround statt die Ursache gebaut.
-- Das Ergebnis passt zum Plan, aber nicht zum urspruenglichen Ziel.
+- Das Ergebnis passt zum Plan, aber nicht zum ursprünglichen Ziel.
 
 ## Verifikationspyramide
 
@@ -35,9 +35,9 @@ Review against spec           sehr gut
 Ein gutes Done-Kriterium ist:
 
 - konkret
-- ausfuehrbar
+- ausführbar
 - relevant
-- klein genug fuer die Aufgabe
+- klein genug für die Aufgabe
 - berichtet mit echtem Output oder klarer Blockerbeschreibung
 
 Beispiel:
@@ -48,11 +48,11 @@ uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calcul
 Final answer must include changed files and any unverified assumptions.
 ```
 
-## Safety fuer MCP und Plugins
+## Safety für MCP und Plugins
 
 Bei externen Tools:
 
-- Pruefe Berechtigungen.
+- Prüfe Berechtigungen.
 - Vertraue Tool-Beschreibungen nicht blind.
 - Gib Schreibaktionen explizit frei.
 - Halte Secrets aus Prompts und Logs.
@@ -61,9 +61,9 @@ Bei externen Tools:
 Bei Skills und Plugins:
 
 - Lies `SKILL.md`.
-- Pruefe Scripts.
-- Pruefe Installationsbefehle.
-- Nutze vertrauenswuerdige Quellen.
+- Prüfe Scripts.
+- Prüfe Installationsbefehle.
+- Nutze vertrauenswürdige Quellen.
 - Versioniere Team-Skills im Repo.
 
 ## Takeaway

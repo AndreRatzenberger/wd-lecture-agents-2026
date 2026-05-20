@@ -2,7 +2,7 @@
 
 ## Ziel
 
-Du baust eine kleine Skill, die einen Agenten vor Code-Aenderungen zum Codebase-Mapping zwingt.
+Du baust eine kleine Skill, die einen Agenten vor Code-Änderungen zum Codebase-Mapping zwingt.
 
 ## Dauer
 
@@ -18,7 +18,7 @@ repo-cartographer
 
 Zweck:
 
-> Wenn ein Agent eine unbekannte Codebase bearbeiten soll, soll er erst die relevanten Pfade, Tests, Risiken und kleinste naechste Aktion kartieren.
+> Wenn ein Agent eine unbekannte Codebase bearbeiten soll, soll er erst die relevanten Pfade, Tests, Risiken und kleinste nächste Aktion kartieren.
 
 ## Schritt 2: Skill-Datei ansehen
 
@@ -39,7 +39,7 @@ Beachte besonders:
 
 ## Schritt 3: In deinen Harness kopieren
 
-Waehle den passenden Ort:
+Wähle den passenden Ort:
 
 ```text
 Codex:        .agents/skills/repo-cartographer/SKILL.md
@@ -62,7 +62,7 @@ Do not edit yet.
 
 ## Schritt 5: Beschreibung testen
 
-Eine Skill steht und faellt mit der `description`.
+Eine Skill steht und fällt mit der `description`.
 
 Teste zwei Prompts:
 
@@ -76,13 +76,13 @@ I want to fix a timer precision bug in Flock, but first map the relevant code.
 
 Frage:
 
-- Wuerde der Agent die Skill finden?
+- Würde der Agent die Skill finden?
 - Ist die Beschreibung zu breit?
 - Ist sie zu vage?
 
 ## Schritt 6: Mini-Iteration
 
-Verbessere die Beschreibung so, dass sie echte Trigger enthaelt:
+Verbessere die Beschreibung so, dass sie echte Trigger enthält:
 
 ```yaml
 description: Map a codebase before editing. Use when a user asks where a feature lives, how a flow works, what files matter, or when implementation should start with read-only orientation.

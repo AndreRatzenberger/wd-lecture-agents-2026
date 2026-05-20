@@ -11,7 +11,7 @@ Agenten sind schnell genug, um falsche Annahmen sofort in Code zu verwandeln.
 Ohne Spec passiert oft:
 
 ```text
-Idee -> Agent schreibt Code -> Mensch entdeckt Missverstaendnis -> Patch auf Patch
+Idee -> Agent schreibt Code -> Mensch entdeckt Missverständnis -> Patch auf Patch
 ```
 
 Mit Spec:
@@ -22,12 +22,12 @@ Idee -> Spec -> Plan -> Tasks -> Implementierung -> Review gegen Spec
 
 Das ist nicht mehr Papierkram. Es ist Drift-Kontrolle.
 
-## Was eine gute Mini-Spec enthaelt
+## Was eine gute Mini-Spec enthält
 
 - Problem
 - Nutzer oder Stakeholder
 - aktuelles Verhalten
-- gewuenschtes Verhalten
+- gewünschtes Verhalten
 - Non-goals
 - Akzeptanzkriterien
 - Edge Cases
@@ -36,9 +36,9 @@ Das ist nicht mehr Papierkram. Es ist Drift-Kontrolle.
 Im Workshop gibt es zwei Varianten:
 
 - **Greenfield**: Die Spec erzeugt erst die Produktform. Beispiel: ein neues Puzzle-Spiel braucht PRD, Mechanics Spec, Testvertrag und erste Slice.
-- **Brownfield**: Die Spec begrenzt eine Aenderung in vorhandener Form. Beispiel: der Flock-Timer-Bug braucht Failure, Scope, Non-goals und Verifikationsbefehl.
+- **Brownfield**: Die Spec begrenzt eine Änderung in vorhandener Form. Beispiel: der Flock-Timer-Bug braucht Failure, Scope, Non-goals und Verifikationsbefehl.
 
-## Spec Kit als Oekosystemsignal
+## Spec Kit als Ökosystemsignal
 
 GitHub Spec Kit macht diesen Ablauf agententauglich und spricht explizit mehrere Coding Agents an. Wichtig ist nicht, dass jeder Spec Kit installieren muss. Wichtig ist das Prozessmuster:
 

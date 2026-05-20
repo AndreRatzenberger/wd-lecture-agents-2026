@@ -9,7 +9,7 @@
 
 ## Lokaler Anschluss
 
-Siehe [../../resources/harness-matrix.md](../../resources/harness-matrix.md) fuer die Zuordnung zwischen `AGENTS.md`, `CLAUDE.md`, Copilot instructions, Skills, MCP und Plugins.
+Siehe [../../resources/harness-matrix.md](../../resources/harness-matrix.md) für die Zuordnung zwischen `AGENTS.md`, `CLAUDE.md`, Copilot instructions, Skills, MCP und Plugins.
 
 ## Vertiefungsfrage
 
