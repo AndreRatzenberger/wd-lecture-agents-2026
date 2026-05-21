@@ -169,3 +169,16 @@ Und du hast den Unterschied gesehen:
 Greenfield: Spec erzeugt die Arbeitsform.
 Brownfield: Spec begrenzt die Änderung in bestehender Form.
 ```
+
+## Optionale Industrie-Vertiefung
+
+Wenn noch Zeit ist oder die Gruppe schon agentenerfahren ist, zeige danach nicht noch mehr Prompt-Karten, sondern ein echtes Workflow-Werkzeug:
+
+- [Superpowers Hands-on](../../resources/superpowers-hands-on.md): derselbe Grundsatz als Skill-Methodik, inklusive TDD- und Review-Gates.
+- [OpenSpec Hands-on](../../resources/openspec-hands-on.md): derselbe Grundsatz als versionierte `openspec/changes/...` Artefakte im Repo.
+
+Leitfrage:
+
+```text
+Was war eben nur Chat-Disziplin, und was wird durch Tooling/Plugin/Artefakte dauerhaft?
+```

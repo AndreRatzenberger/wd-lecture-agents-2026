@@ -33,6 +33,8 @@ Halte für den Greenfield-Track bereit:
 ```text
 resources/greenfield-puzzle-game.md
 resources/greenfield-facilitator-notes.md
+resources/superpowers-hands-on.md
+resources/openspec-hands-on.md
 ```
 
 Der Greenfield-Track braucht kein vorbereitetes Repo. Studierende können in einem leeren Ordner arbeiten. Wichtig ist: erst PRD und Mechanics Spec, dann eine kleine Slice.
@@ -47,6 +49,21 @@ uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calcul
 ```
 
 Der Flock-Test muss rot sein. Die Failure-Zeile soll auf `2026-05-20` vs `2026-05-19` zeigen. Siehe [flock-facilitator-notes.md](flock-facilitator-notes.md).
+
+Optional für die Industrie-Workflow-Labs:
+
+```bash
+node --version
+npm view @fission-ai/openspec version engines --json
+```
+
+Wenn du Superpowers live installierst, nutze den jeweiligen Harness-Installationsweg statt Shell-Magie:
+
+- Claude Code: `/plugin install superpowers@claude-plugins-official`
+- Codex: `/plugins` öffnen, nach `superpowers` suchen und installieren
+- Gemini CLI: `gemini extensions install https://github.com/obra/superpowers`
+
+Wichtig: Die Labs gehören in eine Kopie, einen Fork oder ein Worktree. OpenSpec erzeugt `openspec/` Artefakte im Projekt; Superpowers verändert das Agentenverhalten für den jeweiligen Harness.
 
 ## Live-Demo-Ideen
 
@@ -107,6 +124,22 @@ Erst Repo lesen -> Failure verstehen -> Scope locken -> Fix -> Beweis
 
 Die Aha-Antwort: Greenfield braucht mehr explizite Produktform, Brownfield braucht mehr Respekt vor bestehender Form.
 
+### Demo 5: Prompt-Disziplin vs installiertes Workflow-System
+
+Zeige die manuelle Prompt-Karte aus Modul 05 und dann zwei aktuelle Werkzeuge:
+
+```text
+Superpowers:
+Skill-Bündel erzwingt Methodik im Agenten.
+
+OpenSpec:
+Repo-Artefakte halten Proposal, Spec-Deltas, Design und Tasks fest.
+```
+
+Leitsatz:
+
+> Man kann eine eigene Spec-driven-Development-Skill bauen. Im Workshop schauen wir uns bewusst zwei lebendige Standards an, damit Studierende echte Arbeitsflaechen sehen.
+
 ## Zeitmanagement
 
 Wenn die Gruppe sehr frisch ist:
@@ -121,6 +154,7 @@ Wenn die Gruppe sehr stark ist:
 
 - Modul 04 Skill bauen lassen
 - Modul 05 Greenfield-Spec in echte Tasks splitten lassen
+- Superpowers oder OpenSpec als Industrie-Workflow-Lab auswählen
 - Modul 06 mit zwei parallelen Agent-Rollen simulieren lassen
 - Browser-Automation für die Puzzle-Slice wirklich laufen lassen
 - Nach dem Fix den echten PR #412 als Review-Vergleich nutzen

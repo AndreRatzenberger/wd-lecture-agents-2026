@@ -48,6 +48,18 @@ Der Kurs kopiert nicht den Stil. Der Kurs kopiert die Lektion:
 
 > Eine gute Skill ist ein Verhalten, das man installieren kann.
 
+## Superpowers als Industrie-Beispiel
+
+`obra/superpowers` ist die größere Version derselben Idee: nicht eine einzelne Skill, sondern ein ganzes Methodik-Bündel aus Skills für Brainstorming, Planung, TDD, Review, Worktrees und Abschluss.
+
+Der Kurs muss Superpowers nicht kopieren. Der Lernwert ist:
+
+- Skills können Workflow erzwingen, nicht nur Textstil verändern.
+- Ein Plugin kann viele Skills als zusammenhängende Arbeitsweise verteilen.
+- Installation verändert das Agentenverhalten dauerhaft genug, dass man Skills wie echten Team-Code reviewen sollte.
+
+Vertiefung: [../../resources/superpowers-hands-on.md](../../resources/superpowers-hands-on.md).
+
 ## Skill vs Instruction vs MCP
 
 | Ding | Zweck |

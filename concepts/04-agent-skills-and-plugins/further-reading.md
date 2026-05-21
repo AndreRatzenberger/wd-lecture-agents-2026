@@ -8,6 +8,8 @@
 - Claude Code Agent Skills: <https://docs.claude.com/en/docs/claude-code/skills>
 - Claude Code Plugins: <https://code.claude.com/docs/en/plugins>
 - GitHub Copilot Agent Skills: <https://docs.github.com/en/copilot/concepts/agents/about-agent-skills>
+- Superpowers: <https://github.com/obra/superpowers>
+- Superpowers Release Notes: <https://github.com/obra/superpowers/releases>
 
 ## Aha-Beispiel
 

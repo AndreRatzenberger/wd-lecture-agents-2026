@@ -6,6 +6,10 @@
 - Spec Kit Repo: <https://github.com/github/spec-kit>
 - Spec-driven.md Methodology: <https://github.com/github/spec-kit/blob/main/spec-driven.md>
 - Spec Kit Website: <https://speckit.org/>
+- OpenSpec Website: <https://openspec.dev/>
+- OpenSpec Repo: <https://github.com/Fission-AI/OpenSpec>
+- OpenSpec OPSX Workflow: <https://github.com/Fission-AI/OpenSpec/blob/main/docs/opsx.md>
+- Superpowers Repo: <https://github.com/obra/superpowers>
 
 ## Lokal
 

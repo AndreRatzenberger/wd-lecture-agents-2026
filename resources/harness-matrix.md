@@ -20,6 +20,8 @@ Die Namen unterscheiden sich, die Konzepte sind erstaunlich stabil.
 - Plugins: für Team-Verteilung und Versionierung.
 - Subagents: für isolierte Recherche, Reviews oder parallele Hypothesen.
 - Hooks: für stabile Automatisierung, nicht für unsichere Denkarbeit.
+- Superpowers: wenn eine ganze Engineering-Methodik als Skills/Plugin sichtbar werden soll.
+- OpenSpec: wenn Spec-Changes als versionierte Projektartefakte sichtbar werden sollen.
 
 ## Portabilität
 

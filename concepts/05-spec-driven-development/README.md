@@ -46,6 +46,28 @@ GitHub Spec Kit macht diesen Ablauf agententauglich und spricht explizit mehrere
 specify -> plan -> tasks -> implement
 ```
 
+## Manuell vs Workflow-Werkzeug
+
+Die Prompts in diesem Modul sind absichtlich manuell. Das ist der kleinste gemeinsame Nenner: Jede Person kann den Agenten explizit durch Spec, Plan, Task, Implementierung und Review führen.
+
+In der Praxis kann man daraus natürlich eine eigene `spec-driven-development` Skill oder ein Plugin bauen. Für den Workshop ist aber spannender, zwei aktuelle Industrie-Beispiele zu zeigen:
+
+- **Superpowers**: ein Skill-/Plugin-Bündel, das den Agenten in eine stärkere Methodik zwingt: Design vor Code, Plan vor Ausführung, TDD, Reviews und Abschlussgates.
+- **OpenSpec**: ein leichtgewichtiges Spec-Framework, das Changes, Proposal, Spec-Deltas, Design und Tasks als repo-lokale Artefakte führt.
+
+Didaktische Linie:
+
+```text
+Manuelle Prompt-Karten zeigen das Prinzip.
+Superpowers zeigt Methodik als installierbares Agentenverhalten.
+OpenSpec zeigt Specs als versionierte Projektartefakte.
+```
+
+Vertiefungen:
+
+- [Superpowers Hands-on](../../resources/superpowers-hands-on.md)
+- [OpenSpec Hands-on](../../resources/openspec-hands-on.md)
+
 ## Mini-Beispiel
 
 Greenfield vage:

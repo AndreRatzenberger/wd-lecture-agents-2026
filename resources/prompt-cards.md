@@ -171,3 +171,43 @@ Check:
 Report exact evidence and screenshots or observations.
 Do not call it production-ready unless these checks pass.
 ```
+
+## 11. Superpowers Tiny Fix Prompt
+
+```text
+Use Superpowers for this change.
+
+Goal:
+Fix the failing tiny issue tracker search test.
+
+Context:
+Read playground/tiny-issue-tracker/README.md,
+playground/tiny-issue-tracker/issue_tracker.py,
+and playground/tiny-issue-tracker/tests/test_issue_tracker.py.
+
+Constraints:
+Keep the public Issue and IssueTracker API stable.
+Do not add dependencies.
+Do not broaden search semantics beyond case-insensitive substring matching.
+
+Done when:
+python -m unittest discover -s playground/tiny-issue-tracker/tests passes.
+
+Work style:
+Follow the relevant Superpowers skills for debugging, TDD, verification, and review.
+Show the gates you used, not just the final patch.
+```
+
+## 12. OpenSpec Tiny Change Prompt
+
+```text
+/opsx:propose "Fix tiny issue tracker search so title and body matching are case-insensitive without changing the public API"
+```
+
+Review the generated OpenSpec artifacts before implementation:
+
+```text
+Check proposal.md, specs, design.md, and tasks.md.
+Non-goals must exclude fuzzy search, ranking, persistence, UI changes, and API changes.
+Only then run /opsx:apply.
+```

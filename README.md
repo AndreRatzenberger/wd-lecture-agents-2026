@@ -11,6 +11,8 @@ Die Hands-ons haben drei Ebenen:
 - `playground/tiny-issue-tracker`: sehr kleiner Warm-up für den ersten Agent-Contract.
 - [Greenfield Puzzle Game](resources/greenfield-puzzle-game.md): neues Produkt erst spezifizieren, dann in eine kleine Slice schneiden.
 - [Flock Hands-on](resources/flock-hands-on.md): echtes Repo, echter Bug, echter Verifikationsdruck.
+- [Superpowers Hands-on](resources/superpowers-hands-on.md): aktuelle Skill-Methodik als installierbares Workflow-Bündel ausprobieren.
+- [OpenSpec Hands-on](resources/openspec-hands-on.md): Spec-driven Changes als repo-lokale Artefakte anlegen, anwenden und archivieren.
 
 ## Lernversprechen
 
@@ -58,6 +60,8 @@ resources/
   facilitator-guide.md
   greenfield-puzzle-game.md
   greenfield-facilitator-notes.md
+  superpowers-hands-on.md
+  openspec-hands-on.md
   flock-hands-on.md
   flock-facilitator-notes.md
   harness-matrix.md

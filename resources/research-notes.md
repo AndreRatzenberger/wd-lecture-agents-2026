@@ -18,6 +18,12 @@ Diese Quellen sind die belastbare Basis für den Workshop. Die Einordnung ist ab
 - Model Context Protocol Specification: MCP standardisiert Resources, Prompts und Tools für LLM-Anwendungen; Security und User Consent sind zentrale Prinzipien. Quelle: <https://modelcontextprotocol.io/specification/2025-06-18/basic>
 - GitHub Spec Kit: Spec-driven Development mit AI ist als offenes Toolkit für Copilot, Claude Code, Gemini CLI und andere Agents gedacht. Quelle: <https://github.blog/ai-and-ml/generative-ai/spec-driven-development-with-ai-get-started-with-a-new-open-source-toolkit/>
 - Spec Kit Methodology: SDD behandelt Specs als zentrale Quelle der Wahrheit, aus der Pläne und Code entstehen. Quelle: <https://github.com/github/spec-kit/blob/main/spec-driven.md>
+- Superpowers: aktuelles Skill-/Plugin-Bündel und Engineering-Methodik für Claude Code, Codex, Gemini CLI, OpenCode, Cursor, GitHub Copilot CLI und weitere Harnesses; Kernworkflow: Brainstorming, Worktree, Plan, Subagent/Execution, TDD, Code Review, Finish. Quelle: <https://github.com/obra/superpowers>
+- Superpowers Release v5.1.0: Stand 2026-05-21 ist v5.1.0 als neuestes Release sichtbar; wichtige Änderungen betreffen u.a. Worktree-Skills, Codex-Plugin-Mirror, OpenCode und Dokumentation. Quelle: <https://github.com/obra/superpowers/releases/tag/v5.1.0>
+- OpenSpec: leichtgewichtiges Spec-driven Framework; Specs und Changes leben im Repo, Standardworkflow läuft über OPSX-Befehle wie `/opsx:propose`, `/opsx:apply`, `/opsx:sync` und `/opsx:archive`. Quelle: <https://openspec.dev/>
+- OpenSpec Repo: Quick Start verlangt Node.js 20.19.0+, Installation via `npm install -g @fission-ai/openspec@latest`, Initialisierung via `openspec init`; Stand 2026-05-21 ist npm-Version 1.3.1. Quelle: <https://github.com/Fission-AI/OpenSpec>
+- OpenSpec Release v1.3.1: Stand 2026-05-21 ist v1.3.1 das neueste sichtbare Release; Fokus sind Pfad-, JSON-Output- und Telemetrie-Fixes fuer Agenten-Workflows. Quelle: <https://github.com/Fission-AI/OpenSpec/releases/tag/v1.3.1>
+- OpenSpec OPSX: OPSX ist der aktuelle Standardworkflow; Core-Profil enthält `propose`, `explore`, `apply`, `sync`, `archive`, erweiterte Workflows können `new`, `continue`, `ff`, `verify`, `bulk-archive`, `onboard` aktivieren. Quelle: <https://github.com/Fission-AI/OpenSpec/blob/main/docs/opsx.md>
 
 ## Lokale Research-Artefakte
 
