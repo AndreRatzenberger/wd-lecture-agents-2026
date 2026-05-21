@@ -211,3 +211,39 @@ Check proposal.md, specs, design.md, and tasks.md.
 Non-goals must exclude fuzzy search, ranking, persistence, UI changes, and API changes.
 Only then run /opsx:apply.
 ```
+
+## 13. Failure Mode Intervention Prompt
+
+```text
+Stop.
+Classify the current failure mode:
+- editing too early
+- scope creep
+- weak spec
+- fake verification
+- weakened test
+- architecture theater
+- ignored project rules
+- unsafe tool trust
+
+Then recover:
+1. name the specific evidence for that failure mode
+2. restate the approved scope
+3. list required vs optional vs out-of-scope changes
+4. continue only with the required work
+```
+
+## 14. Workbook Final Handoff Prompt
+
+```text
+Fill the final handoff:
+- what changed
+- why it changed
+- how it was verified
+- what did not change
+- what remains risky
+- next useful step
+
+Use exact file names, commands, and results.
+Do not claim completion without verification evidence.
+```

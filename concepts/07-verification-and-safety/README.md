@@ -66,6 +66,18 @@ Bei Skills und Plugins:
 - Nutze vertrauenswürdige Quellen.
 - Versioniere Team-Skills im Repo.
 
+## Failure Modes benennen
+
+Viele Agentenläufe scheitern nicht spektakulär, sondern leise:
+
+- zu früh editieren
+- Scope vergrößern
+- Tests schwächen
+- Verification behaupten statt ausführen
+- Tool-Ausgaben zu stark vertrauen
+
+Nutze den [Agent Failure Modes Catalog](../../resources/agent-failure-modes.md), um solche Muster im Lauf zu benennen und gezielt zu stoppen.
+
 ## Takeaway
 
 Agentenarbeit ohne Verifikation ist Theater. Agentenarbeit mit Verifikation ist Engineering.

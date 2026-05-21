@@ -27,7 +27,7 @@ Stand der Recherche: 2026-05-21.
 - npm-Paket: `@fission-ai/openspec`
 - Aktuelle npm-Version im Check: `1.3.1`
 - Neuestes sichtbares Release: `v1.3.1` vom 2026-04-21.
-- Voraussetzung laut README: Node.js `20.19.0` oder hoeher.
+- Voraussetzung laut README: Node.js `20.19.0` oder höher.
 - Standardworkflow ist inzwischen OPSX: `/opsx:propose`, `/opsx:explore`, `/opsx:apply`, `/opsx:sync`, `/opsx:archive`.
 - Erweiterte Workflows können zusätzlich `/opsx:new`, `/opsx:continue`, `/opsx:ff`, `/opsx:verify`, `/opsx:bulk-archive`, `/opsx:onboard` erzeugen.
 - Alte Befehle wie `/openspec:proposal` existieren noch, aber die aktuellen Docs empfehlen OPSX.
@@ -172,7 +172,7 @@ Vergleiche mit Modul 05:
 | --- | --- | --- |
 | Wo lebt die Spec nach der Session? | Chat | Repo |
 | Kann ein anderer Developer sie reviewen? | schwer | ja |
-| Kann der Agent spaeter daran anknuepfen? | nur mit Chat-Kontext | ja |
+| Kann der Agent später daran anknüpfen? | nur mit Chat-Kontext | ja |
 | Ist es schneller für kleine Aufgaben? | oft ja | nicht immer |
 | Ist es besser für Teamarbeit? | begrenzt | meist ja |
 
@@ -182,7 +182,7 @@ OpenSpec ist nicht "Plan Mode mit anderem Namen". Der Unterschied ist nicht, das
 
 Guter Lehrsatz:
 
-> Prompting steuert diese Session. OpenSpec steuert den naechsten Developer mit.
+> Prompting steuert diese Session. OpenSpec steuert den nächsten Developer mit.
 
 ## Abschlussfragen
 

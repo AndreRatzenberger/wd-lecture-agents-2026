@@ -4,6 +4,8 @@
 
 Du lernst, eine Agent-Änderung nicht nur anzunehmen, sondern gegen Auftrag, Diff und Tests zu prüfen.
 
+Nutze bei auffälligem Verhalten zusätzlich den [Failure Modes Catalog](../../resources/agent-failure-modes.md), um das Problem zu benennen und den Lauf zu korrigieren.
+
 ## Dauer
 
 20 bis 25 Minuten.

@@ -176,6 +176,7 @@ Wenn noch Zeit ist oder die Gruppe schon agentenerfahren ist, zeige danach nicht
 
 - [Superpowers Hands-on](../../resources/superpowers-hands-on.md): derselbe Grundsatz als Skill-Methodik, inklusive TDD- und Review-Gates.
 - [OpenSpec Hands-on](../../resources/openspec-hands-on.md): derselbe Grundsatz als versionierte `openspec/changes/...` Artefakte im Repo.
+- [Workflow Comparison Lab](../../resources/workflow-comparison-lab.md): denselben Tiny-Change manuell, mit Superpowers und mit OpenSpec vergleichen.
 
 Leitfrage:
 

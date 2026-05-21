@@ -26,7 +26,7 @@ Stand der Recherche: 2026-05-21.
 
 ## Lernziel
 
-Studierende sollen sehen, wie sich ein Agent verhaelt, wenn Methodik als Plugin/Skill-System installiert ist.
+Studierende sollen sehen, wie sich ein Agent verhält, wenn Methodik als Plugin/Skill-System installiert ist.
 
 Sie sollen nicht blind glauben, dass Superpowers "besser" ist. Sie sollen beobachten:
 
@@ -159,7 +159,7 @@ Vergleiche:
 
 Wenn Superpowers bei diesem kleinen Bug viel Prozess fordert, ist das kein Fehler der Demo. Es ist der Lernpunkt:
 
-> Methodik ist ein Werkzeug. Ein gutes Werkzeug muss zur Groesse der Arbeit passen.
+> Methodik ist ein Werkzeug. Ein gutes Werkzeug muss zur Größe der Arbeit passen.
 
 Bei einer grossen Greenfield-Slice oder einem riskanten Brownfield-Fix sind die Gates wertvoller. Bei einem Zwei-Zeilen-Bug zeigen sie vor allem, wie ein installiertes Skill-System den Agenten bremst, fokussiert und reviewbar macht.
 

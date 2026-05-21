@@ -6,13 +6,16 @@ Ziel: Studierende sollen nicht nur wissen, dass Agents Code schreiben können. S
 
 Der Kurs ist bewusst harness-neutral. Die Beispiele sind für Codex, Claude Code und GitHub Copilot gedacht, aber die Konzepte tragen auch zu Cursor, Cline, Windsurf, Gemini CLI, OpenCode und anderen Agent-Umgebungen.
 
-Die Hands-ons haben drei Ebenen:
+Die wichtigsten Arbeitsflächen:
 
 - `playground/tiny-issue-tracker`: sehr kleiner Warm-up für den ersten Agent-Contract.
+- [Client-Agnostic Agent Workbook](resources/client-agnostic-workbook.md): Arbeitsfläche für Studierende, Kund:innen, Teams und Einzelpersonen.
 - [Greenfield Puzzle Game](resources/greenfield-puzzle-game.md): neues Produkt erst spezifizieren, dann in eine kleine Slice schneiden.
 - [Flock Hands-on](resources/flock-hands-on.md): echtes Repo, echter Bug, echter Verifikationsdruck.
 - [Superpowers Hands-on](resources/superpowers-hands-on.md): aktuelle Skill-Methodik als installierbares Workflow-Bündel ausprobieren.
 - [OpenSpec Hands-on](resources/openspec-hands-on.md): Spec-driven Changes als repo-lokale Artefakte anlegen, anwenden und archivieren.
+- [Workflow Comparison Lab](resources/workflow-comparison-lab.md): Manual vs Superpowers vs OpenSpec am gleichen Change vergleichen.
+- [Agent Failure Modes Catalog](resources/agent-failure-modes.md): typische Agentenfehler erkennen und stoppen.
 
 ## Lernversprechen
 
@@ -58,10 +61,13 @@ examples/
   mcp/
 resources/
   facilitator-guide.md
+  client-agnostic-workbook.md
   greenfield-puzzle-game.md
   greenfield-facilitator-notes.md
   superpowers-hands-on.md
   openspec-hands-on.md
+  workflow-comparison-lab.md
+  agent-failure-modes.md
   flock-hands-on.md
   flock-facilitator-notes.md
   harness-matrix.md
@@ -101,6 +107,13 @@ uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calcul
 ```
 
 6. Mit Modul 01 starten. Ab Modul 05 werden Greenfield Puzzle und Flock bewusst verglichen.
+
+Optional während der gesamten Session mitführen:
+
+```text
+resources/client-agnostic-workbook.md
+resources/agent-failure-modes.md
+```
 
 ## Haltung
 

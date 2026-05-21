@@ -18,6 +18,14 @@ python -m unittest discover -s playground/tiny-issue-tracker/tests
 
 Die Tests dürfen fehlschlagen. Das ist Arbeitsmaterial.
 
+Öffne zusätzlich das client-agnostic Workbook:
+
+```text
+resources/client-agnostic-workbook.md
+```
+
+Es ist die gemeinsame Arbeitsfläche für Agent Contract, Mini-Spec, Verification Evidence und Handoff.
+
 Für den Realprojekt-Track:
 
 ```bash

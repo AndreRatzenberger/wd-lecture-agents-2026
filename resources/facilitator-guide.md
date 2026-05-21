@@ -19,6 +19,8 @@ Jedes Modul hat deshalb denselben Rhythmus:
 
 - Stelle sicher, dass mindestens ein Agent-Harness verfügbar ist.
 - Empfohlen: Codex CLI, Claude Code oder GitHub Copilot mit Agent Mode.
+- Öffne das [Client-Agnostic Agent Workbook](client-agnostic-workbook.md) als gemeinsame Arbeitsfläche. Es funktioniert für Studierende, Kund:innen, interne Teams und Einzelpersonen.
+- Halte den [Agent Failure Modes Catalog](agent-failure-modes.md) griffbereit, um schlechte Agentenläufe sofort zu benennen und zu korrigieren.
 - Prüfe, ob Python 3 verfügbar ist:
 
 ```bash
@@ -35,6 +37,7 @@ resources/greenfield-puzzle-game.md
 resources/greenfield-facilitator-notes.md
 resources/superpowers-hands-on.md
 resources/openspec-hands-on.md
+resources/workflow-comparison-lab.md
 ```
 
 Der Greenfield-Track braucht kein vorbereitetes Repo. Studierende können in einem leeren Ordner arbeiten. Wichtig ist: erst PRD und Mechanics Spec, dann eine kleine Slice.
@@ -138,7 +141,24 @@ Repo-Artefakte halten Proposal, Spec-Deltas, Design und Tasks fest.
 
 Leitsatz:
 
-> Man kann eine eigene Spec-driven-Development-Skill bauen. Im Workshop schauen wir uns bewusst zwei lebendige Standards an, damit Studierende echte Arbeitsflaechen sehen.
+> Man kann eine eigene Spec-driven-Development-Skill bauen. Im Workshop schauen wir uns bewusst zwei lebendige Standards an, damit Studierende echte Arbeitsflächen sehen.
+
+### Demo 6: Drei Wege, ein Change
+
+Wenn genug Zeit ist, nutze [workflow-comparison-lab.md](workflow-comparison-lab.md):
+
+```text
+Manual:
+Prompt-Karten und menschliche Gate-Kontrolle.
+
+Superpowers:
+Methodik als installiertes Agentenverhalten.
+
+OpenSpec:
+Spec und Tasks als repo-lokale Artefakte.
+```
+
+Die Aha-Antwort: Der beste Workflow hängt an Risiko, Teamgröße und Reviewbedarf, nicht am Tool-Namen.
 
 ## Zeitmanagement
 
@@ -154,7 +174,7 @@ Wenn die Gruppe sehr stark ist:
 
 - Modul 04 Skill bauen lassen
 - Modul 05 Greenfield-Spec in echte Tasks splitten lassen
-- Superpowers oder OpenSpec als Industrie-Workflow-Lab auswählen
+- Superpowers, OpenSpec oder das dreiteilige Workflow Comparison Lab auswählen
 - Modul 06 mit zwei parallelen Agent-Rollen simulieren lassen
 - Browser-Automation für die Puzzle-Slice wirklich laufen lassen
 - Nach dem Fix den echten PR #412 als Review-Vergleich nutzen
@@ -167,6 +187,8 @@ Wenn die Gruppe sehr stark ist:
 - "Wir wollen keine perfekten Prompts. Wir wollen robuste Arbeitsabläufe."
 - "Toy-Projekte zeigen, dass Agents Code schreiben können. Flock zeigt, ob wir Agents führen können."
 - "Greenfield braucht Spec, weil noch keine Codebase widerspricht."
+- "Wenn wir den Fehler benennen können, können wir ihn stoppen."
+- "Manual, Superpowers und OpenSpec sind keine Religionen. Sie sind unterschiedliche Reibungsprofile."
 
 ## Abschlussfrage
 
