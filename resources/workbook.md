@@ -6,6 +6,48 @@ Dieses Workbook ist die Arbeitsfläche für Agentenarbeit:
 
 Nutze dieses Blatt während des Workshops oder später in echten Projekten. Schreibe knapp. Gute Agentenführung ist nicht mehr Text, sondern bessere Entscheidungen.
 
+## Mit einem Agenten benutzen
+
+Das Workbook funktioniert am besten, wenn du es dem Agenten als Arbeitsrahmen gibst. Der Agent soll die relevanten Abschnitte selbst ausfüllen und sich daran halten.
+
+Für einen normalen Agentenlauf:
+
+```text
+Use resources/workbook.md as the workflow guide for this task.
+Start with sections 1-3.
+Do not edit files until the Read-Only Map is useful enough to identify the smallest next action.
+```
+
+Für größere oder riskantere Aufgaben:
+
+```text
+Use resources/workbook.md end to end.
+Fill the relevant sections as you work:
+1. Ausgangslage
+2. Agent Contract
+3. Read-Only Map
+4. Mini-Spec
+5. Plan Lock
+6. Implementation Notes
+7. Verification Evidence
+8. Final Handoff
+
+Do not implement before the Plan Lock.
+Do not claim completion without Verification Evidence.
+```
+
+Für kleine Bugs:
+
+```text
+Use resources/workbook.md lightly.
+Apply sections 2, 3, 7, and 8.
+Keep the process compact.
+```
+
+Merksatz:
+
+> Das Workbook ist nicht nur ein Formular. Es ist ein Steuerungsartefakt für den Agenten.
+
 ## 1. Ausgangslage
 
 ```text
