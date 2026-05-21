@@ -9,7 +9,7 @@ Der Kurs ist bewusst harness-neutral. Die Beispiele sind für Codex, Claude Code
 Die wichtigsten Arbeitsflächen:
 
 - `playground/tiny-issue-tracker`: sehr kleiner Warm-up für den ersten Agent-Contract.
-- [Client-Agnostic Agent Workbook](resources/client-agnostic-workbook.md): Arbeitsfläche für Studierende, Kund:innen, Teams und Einzelpersonen.
+- [Workbook](resources/workbook.md): Arbeitsfläche für Agent Contract, Mini-Spec, Verification und Handoff.
 - [Greenfield Puzzle Game](resources/greenfield-puzzle-game.md): neues Produkt erst spezifizieren, dann in eine kleine Slice schneiden.
 - [Flock Hands-on](resources/flock-hands-on.md): echtes Repo, echter Bug, echter Verifikationsdruck.
 - [Superpowers Hands-on](resources/superpowers-hands-on.md): aktuelle Skill-Methodik als installierbares Workflow-Bündel ausprobieren.
@@ -61,7 +61,7 @@ examples/
   mcp/
 resources/
   facilitator-guide.md
-  client-agnostic-workbook.md
+  workbook.md
   greenfield-puzzle-game.md
   greenfield-facilitator-notes.md
   superpowers-hands-on.md
@@ -111,7 +111,7 @@ uv run pytest tests/test_timer_component.py::TestTimerStateTracking::test_calcul
 Optional während der gesamten Session mitführen:
 
 ```text
-resources/client-agnostic-workbook.md
+resources/workbook.md
 resources/agent-failure-modes.md
 ```
 

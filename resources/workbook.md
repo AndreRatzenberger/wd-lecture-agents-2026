@@ -1,8 +1,6 @@
-# Client-Agnostic Agent Workbook
+# Workbook
 
-Dieses Workbook ist die Arbeitsfläche für jede Person, die einen Coding Agent führt: Studierende, Kund:innen, interne Teams, Workshop-Teilnehmende oder einzelne Entwickler:innen.
-
-Es ist bewusst nicht an eine Rolle gebunden. Der Zweck ist immer gleich:
+Dieses Workbook ist die Arbeitsfläche für Agentenarbeit:
 
 > Aus einem vagen Auftrag wird ein prüfbarer Arbeitsstand.
 

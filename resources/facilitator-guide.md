@@ -19,7 +19,7 @@ Jedes Modul hat deshalb denselben Rhythmus:
 
 - Stelle sicher, dass mindestens ein Agent-Harness verfügbar ist.
 - Empfohlen: Codex CLI, Claude Code oder GitHub Copilot mit Agent Mode.
-- Öffne das [Client-Agnostic Agent Workbook](client-agnostic-workbook.md) als gemeinsame Arbeitsfläche. Es funktioniert für Studierende, Kund:innen, interne Teams und Einzelpersonen.
+- Öffne das [Workbook](workbook.md) als gemeinsame Arbeitsfläche.
 - Halte den [Agent Failure Modes Catalog](agent-failure-modes.md) griffbereit, um schlechte Agentenläufe sofort zu benennen und zu korrigieren.
 - Prüfe, ob Python 3 verfügbar ist:
 
